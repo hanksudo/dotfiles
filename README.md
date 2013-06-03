@@ -47,4 +47,3 @@ Sometimes work not well, set Terminal Preferences yourself.
 ## .zsh-theme
 
 Refer [paulmillr](https://github.com/paulmillr/dotfiles)'s .zsh-theme, and minor changes.
-Reference from [paulmillr](https://github.com/paulmillr/dotfiles)
