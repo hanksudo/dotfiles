@@ -66,6 +66,10 @@ chmod +x ~/bin/z.sh
 echo Installing nvm ... 
 curl -s https://raw.github.com/creationix/nvm/master/install.sh | sh
 
+# Ruby enVironment Manager
+echo Installing rvm ...
+curl -L https://get.rvm.io | bash -s stable --ignore-dotfiles
+ 
 # zsh plugin - zsh syntax highlight
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]
 then

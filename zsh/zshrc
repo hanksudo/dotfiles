@@ -65,6 +65,9 @@ source ~/.functions
 # This loads NVM
 source ~/.nvm/nvm.sh
 
+# RVM
+source ~/.rvm/scripts/rvm
+
 # show path
 alias path='echo ${PATH}'
 

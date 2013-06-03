@@ -14,6 +14,7 @@ curl -L https://raw.github.com/hankwang/dotfiles/master/install.sh | sh
 * Use **z** command to jump around. [https://github.com/rupa/z](https://github.com/rupa/z) - Tracks your most used directories, based on 'frequency'.
 * Use [PTMono Fonts](http://www.paratype.com/public/)
 * Installed NVM ( [Node Version Manager](https://github.com/creationix/nvm) )
+* Installed RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
 
 ## Extra alias & functions
 
