@@ -1,0 +1,51 @@
+#
+# My simple terminal theme.
+#
+# dotfiles ❯ (default)
+# dotfiles git:master ❯ (in git repository)
+# root@serv dotfiles git:master ❯ (with SSH)
+#
+# Authors:
+#   Paul Miller
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+vcs_info=''
+
+function prompt_paulmillr_precmd {
+  setopt LOCAL_OPTIONS
+  unsetopt XTRACE KSH_ARRAYS
+}
+
+function list-files {
+  echo `script -q /dev/null ls -G . | tr -d '\r' | cat`
+}
+
+function get-vcs-info {
+  local ref=$(git symbolic-ref HEAD 2> /dev/null)
+  if [[ -z "$ref" ]]; then
+    vcs_info=''
+  else
+    vcs_info=" %F{blue}git%f:%F{red}${ref#refs/heads/}%f"
+  fi
+}
+
+function prompt_paulmillr_setup {
+  setopt LOCAL_OPTIONS
+  unsetopt XTRACE KSH_ARRAYS
+  prompt_opts=(cr percent subst)
+
+  autoload -Uz add-zsh-hook
+  add-zsh-hook precmd get-vcs-info
+  add-zsh-hook chpwd list-files
+  add-zsh-hook chpwd get-vcs-info
+
+  zstyle ':omz:module:editor' completing '%B%F{red}...%f%b'
+
+  PROMPT='%F{yellow}%T %F{magenta}${SSH_TTY:+%n@%m }%F{cyan}%1~%f${vcs_info} %(!.%B%F{red}#%f%b.%B%F{green}❯%f%b) '
+  RPROMPT='${editor_info[keymap]}${editor_info[overwrite]}%(?:: %F{red}⏎%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}'
+  SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
+}
+
+prompt_paulmillr_setup "$@"
+
