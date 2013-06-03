@@ -2,6 +2,13 @@
 
 <img src="http://i.imgur.com/vzftD0D.png">
 
+
+## Install
+
+```
+curl -L https://raw.github.com/hankwang/dotfiles/master/install.sh | sh
+```
+
 ## Note
 
 * Use **z** command to jump around. [https://github.com/rupa/z](https://github.com/rupa/z) - Tracks your most used directories, based on 'frequency'.
