@@ -1,0 +1,155 @@
+# .gitconfig
+
+[user]
+name = @NAME@
+email = @EMAIL@
+
+[alias]
+    cis = commit --signoff
+    ci = commit
+    pr = pull --rebase
+    st = status
+    br = branch
+    praise = blame
+    sa = stash apply
+    sc = stash clear
+    ss = stash save
+    pr = pull --rebase
+    undo = reset --soft HEAD^
+
+    l1 = !git --no-pager log --max-count=1 HEAD
+    l3 = !git --no-pager log --max-count=3 HEAD
+    log5 = log --max-count=5 HEAD
+
+    k = !gitk --all
+
+# graph of tree
+# =============
+
+    #lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    #lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+    lol = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr)%Creset' --abbrev-commit --date=relative --all
+
+    lola = log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr) %C(bold ul blue)%an%Creset' --abbrev-commit --date=relative --all
+    l10 = !git --no-pager log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr) %C(bold ul blue)%an%Creset' --abbrev-commit --date=relative -10 && echo
+
+    ll = !git --no-pager log --graph --pretty=format:'%C(bold red)%h%Creset -%C(bold yellow)%d%Creset %s %C(bold green)(%cr) %C(bold ul blue)%an%Creset' --abbrev-commit --date=relative --all --max-count=$(tput lines) | head -n $(expr $(tput lines) - 5) && echo
+
+# git-svn commands
+# ================
+
+    up = svn rebase
+    dc = svn dcommit
+
+# handling a local transient branch
+# =================================
+
+# the intended sequence is:
+#   git co master # if not already there
+#   git pull      # update
+#   git today     # create local today branch
+#   while work
+#     edit ${file}
+#     git add ${file}
+#     git ci
+#   gitk # see the state
+#   git fetch
+#   git rebase master
+#   git tidy # more than once
+#   git done
+
+    today = checkout -b today
+    tidy = rebase -i master
+    done = rebase today master
+
+# rewrite history
+# ===============
+
+   last10 = rebase -i HEAD~10
+   last5 = rebase -i HEAD~5
+   last2 = rebase -i HEAD~2
+   last1 = rebase -i HEAD
+
+   # and the last 10 commits will appear in your favourite $EDITOR. A sample excerpt:
+   # pick 5c6eb73 Added repo.or.cz link
+   # pick a311a64 Reordered analogies in "Work How You Want"
+   # pick 100834f Added push target to Makefile
+
+   # Then:
+   # Remove commits by deleting lines.
+   # Reorder commits by reordering lines.
+   # Replace "pick" with "edit" to mark a commit for amending.
+   # Replace "pick" with "squash" to merge a commit with the previous one.
+
+   # If you marked a commit for editing, then run:
+   amend = commit --amend
+
+   # otherwise, run:
+   cont = rebase --continue
+
+
+[apply]
+    whitespace = strip
+
+[diff]
+    color = auto
+    renames = copy
+
+[color]
+    branch = auto
+    diff = auto
+    grep = auto
+    interactive = auto
+    status = auto
+
+# Colours:  black, red, green, yellow, blue, magenta, cyan and white
+# Attributes: bold, dim, ul, blink and reverse
+# var = [attribute] foreground [background]
+
+[color.branch]
+    current = bold green
+    local = bold yellow
+    remote = bold red
+    plain = white
+
+[color.diff]
+    #plain = white
+    #meta = white
+    frag = ul bold blue
+    #func = white
+    old = bold red
+    new = bold green
+    commit = yellow
+    #whitespace = white
+
+[color.grep]
+    match = bold yellow
+
+[color.interactive]
+    prompt = bold cyan
+    header = bold blue
+    help = bold green
+    error = bold red
+
+[color.status]
+    header = bold white
+    added = bold yellow
+    updated = bold green
+    changed = bold red
+    untracked = bold blue
+    nobranch = bold magenta
+    unmerged = bold cyan
+
+[pager]
+    color = true
+
+[status]
+    color = auto
+
+[core]
+    excludesfile = ~/.git-global-ignore
+    attributesfile = ~/.git-global-attributes
+
+[push]
+    default = simple

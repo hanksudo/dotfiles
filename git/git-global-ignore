@@ -1,0 +1,15 @@
+# .git-global-ignore
+
+# ignore emacs backups
+*~
+
+# object files
+*.o
+
+# library files
+*.so
+*.a
+
+# other repositories
+CVS
+.svn
