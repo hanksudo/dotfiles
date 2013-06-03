@@ -1,0 +1,69 @@
+DOTFILES_ROOT=`pwd`
+
+# get a string escaping / & for later sed substitution
+# usage:  var=$(get prompt message here) || exit 1
+# note: need the exit as the ERROR only terminates the $() sub-shell
+get()
+{
+  local default prompt data
+  default="$1"; shift
+
+  read -p "$* [${default}]: " -r data
+  [ -z "${data}" ] && data="${default}"
+  printf '%s' "${data}" | sed 's/\\/\\\\/g;s,/,\\/,g;s,&,\\\&,g'
+}
+
+# main program
+
+echo this will install the files to: ${HOME}
+
+config="${HOME}/.dotfilesrc"
+
+name=
+email=
+[ -f "${config}" ] && . "${config}"
+
+echo Configuring gitconfig ...
+echo Enter some data for substitutions
+
+name=$(get "${name}" Enter full name) || exit 1
+email=$(get "${email}" Enter email address) || exit 1
+
+rm -f "${config}"
+echo '# .dotfilesrc' >> "${config}"
+echo '' >> "${config}"
+echo 'email='"'"${email}"'" >> "${config}"
+echo 'name='"'"${name}"'" >> "${config}"
+
+# use sed to substitute som @VAR@ by values saved in ${config}
+sed "s/@NAME@/${name}/g; s/@EMAIL@/${email}/g" git/gitconfig > ~/.gitconfig
+
+cp git/git-global-ignore ~/.git-global-ignore
+cp git/git-global-attributes ~/.git-global-attributes
+
+echo Installing PTMono fonts ...
+cp -fr fonts/PTMono/*ttf ~/Library/Fonts/
+
+echo Copy .zsh-theme ...
+cp -f theme/paulmillr.zsh-theme ~/.oh-my-zsh/themes/
+
+echo Copy .zshrc
+cp -f zsh/zshrc ~/.zshrc
+
+echo Copy .functions
+cp -f zsh/functions ~/.functions
+
+# https://github.com/rupa/z
+# Tracks your most used directories, based on 'frequency'.
+# put this in your .bash_profile:
+# . /path/to/z.sh
+echo Installing z ...
+mkdir -p ~/bin/
+curl -s https://raw.github.com/rupa/z/master/z.sh > ~/bin/z.sh
+chmod +x ~/bin/z.sh
+
+# Node Version Manager 
+echo Installing nvm ... 
+curl -s https://raw.github.com/creationix/nvm/master/install.sh | sh
+
+echo Done.
