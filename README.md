@@ -23,6 +23,10 @@
 * **localip** - local ip
 * **ips** - IPv4 IPs
 * **whois** - Enhanced WHOIS lookups
+* **gz** - get gzipped size
+* **extract** - Extract archives - use: extract <file>
+* **mkcd** - Make dir and cd into.
+* **server** - Start an HTTP server from a directory, optionally specifying the port.
 
 ## Terminal Settings
 
