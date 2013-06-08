@@ -45,8 +45,8 @@ plugins=(npm pip sublime zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
-export PATH=~/bin:$PATH:/usr/local/share/npm/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+export PATH=~/bin:$PATH:/usr/local/share/npm/bin:~/.rvm/bin
 
 # zmv '(*).html $1.haml'
 # http://zshwiki.org/home/builtin/functions/zmv
