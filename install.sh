@@ -4,10 +4,7 @@ then
     curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 fi
 
-if [ ! -d ~/.dotfiles ]
-then 
-    echo "Clone dotfiles from Github..."
-    git clone https://github.com/hankwang/dotfiles.git ~/.dotfiles
-    cd ~/.dotfiles
-    script/bootstrap
-fi
+echo "Clone dotfiles from Github..."
+git clone https://github.com/hankwang/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+script/bootstrap
