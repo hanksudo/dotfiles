@@ -86,6 +86,8 @@ alias ll='ls -l'
 alias la='ls -A'
 alias lc='ls -CF'
 alias lsd='ls -l | grep "^d"'  # List only directories
+alias cp='cp -i' # interactive mode
+alias mv='mv -i'
 
 alias hosts='sudo $EDITOR /etc/hosts'
 alias sshc='$EDITOR ~/.ssh/config'
