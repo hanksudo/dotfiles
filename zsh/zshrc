@@ -48,25 +48,24 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 export PATH=~/bin:$PATH:/usr/local/share/npm/bin:~/.rvm/bin
 
+# Added Go paths
+export GOPATH=$HOME/goProjects
+export GOROOT=`go env GOROOT`
+export PATH=$PATH:$GOPATH/bin
+
 # zmv '(*).html $1.haml'
 # http://zshwiki.org/home/builtin/functions/zmv
 autoload -U zmv
 
 # default editor
-EDITOR=vim
+export EDITOR=vim
 
-# https://github.com/rupa/z
-# Tracks your most used directories, based on 'frecency'.
-source ~/bin/z.sh
+# autojump - https://github.com/joelthelion/autojump
+# A cd command that learns - easily navigate directories from the command line
+[[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
 
 # extra functions
 source ~/.functions
-
-# This loads NVM
-source ~/.nvm/nvm.sh
-
-# RVM
-source ~/.rvm/scripts/rvm
 
 # show path
 alias path='echo ${PATH}'
@@ -85,8 +84,9 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias lc='ls -CF'
-alias lsd='ls -l | grep "^d"'  # List only directories
-alias cp='cp -i' # interactive mode
+alias lsd='ll | grep "^d"'  # List only directories
+alias lsf='ll | grep "^-"'  # List only files
+alias cp='cp -i'
 alias mv='mv -i'
 
 alias hosts='sudo $EDITOR /etc/hosts'
