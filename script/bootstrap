@@ -14,66 +14,100 @@ get()
 }
 
 # main program
-
-echo this will install the files to: ${HOME}
+echo "=> This will install the files to: ${HOME}"
+echo -ne "\r=> "
 
 config="${HOME}/.dotfilesrc"
-
 name=
 email=
-[ -f "${config}" ] && . "${config}"
 
-echo Configuring gitconfig ...
-echo Enter some data for substitutions
+if [ -f "${config}" ]; then
+    . "${config}"
+    echo "=> ${config} exists"
+else
+    echo "=> dotfilesrc not exists ..."
+    echo "=> Enter some data for substitutions"
+    echo -ne "\r=> "
 
-name=$(get "${name}" Enter full name) || exit 1
-email=$(get "${email}" Enter email address) || exit 1
+    name=$(get "${name}" Enter full name) || exit 1
+    email=$(get "${email}" Enter email address) || exit 1
 
-rm -f "${config}"
-echo '# .dotfilesrc' >> "${config}"
-echo '' >> "${config}"
-echo 'email='"'"${email}"'" >> "${config}"
-echo 'name='"'"${name}"'" >> "${config}"
+    rm -f "${config}"
+    echo '# .dotfilesrc' >> "${config}"
+    echo '' >> "${config}"
+    echo 'email='"'"${email}"'" >> "${config}"
+    echo 'name='"'"${name}"'" >> "${config}"
+fi
 
-# use sed to substitute som @VAR@ by values saved in ${config}
-sed "s/@NAME@/${name}/g; s/@EMAIL@/${email}/g" git/gitconfig > ~/.gitconfig
+gitconfig="${HOME}/.gitconfig"
 
-cp git/git-global-ignore ~/.git-global-ignore
-cp git/git-global-attributes ~/.git-global-attributes
+if [ ! -f "${gitconfig}" ]; then
+    echo "=> Configuring gitconfig ..."
+    echo -ne "\r=> "
 
-echo Installing PTMono fonts ...
+    # use sed to substitute som @VAR@ by values saved in ${config}
+    sed "s/@NAME@/${name}/g; s/@EMAIL@/${email}/g" git/gitconfig > "${gitconfig}"
+
+    cp git/git-global-ignore ~/.git-global-ignore
+    cp git/git-global-attributes ~/.git-global-attributes
+else
+    echo "=> ${gitconfig} exists"
+fi
+
+echo "=> Installing PTMono fonts ..."
 cp -fr fonts/PTMono/*ttf ~/Library/Fonts/
 
-echo Copy .zsh-theme ...
+echo "=> Installing .zsh-theme ..."
 cp -f theme/paulmillr.zsh-theme ~/.oh-my-zsh/themes/
 
-echo Copy .zshrc
+echo "=> Installing .zshrc ..."
 cp -f zsh/zshrc ~/.zshrc
 
-echo Copy .functions
+# change shell to zsh
+if [ $SHELL != '/bin/zsh' ]; then
+    echo $SHELL
+    chsh -s /bin/zsh
+fi
+
+echo "=> Installing .functions ..."
 cp -f zsh/functions ~/.functions
 
-# https://github.com/rupa/z
-# Tracks your most used directories, based on 'frequency'.
-# put this in your .bash_profile:
-# . /path/to/z.sh
-echo Installing z ...
-mkdir -p ~/bin/
-curl -s https://raw.github.com/rupa/z/master/z.sh > ~/bin/z.sh
-chmod +x ~/bin/z.sh
+# autojump - a faster way to navigate your filesystem
+# https://github.com/joelthelion/autojump
+echo "=> Installing autojump ..."
+echo -ne "\r=> "
+brew install autojump
 
-# Node Version Manager 
-echo Installing nvm ... 
-curl -s https://raw.github.com/creationix/nvm/master/install.sh | sh
+# GNU core utilities
+# Use **gls(coreutils)** instead of ls
+echo "=> Installing GNU core utilities ..."
+echo -ne "\r=> "
+brew install coreutils
+
+# Node Version Manager
+if ! [[ -s ~/.nvm/nvm.sh ]]; then
+    echo "=> Installing nvm ..."
+    echo -ne "\r=> "
+    curl -s https://raw.github.com/creationix/nvm/master/install.sh | sh
+else
+    echo "=> nvm already installed"
+fi
 
 # Ruby enVironment Manager
-echo Installing rvm ...
-curl -L https://get.rvm.io | bash -s stable --ignore-dotfiles
- 
+if ! type rvm > /dev/null; then
+    echo "=> Installing rvm ..."
+    echo -ne "\r=> "
+    curl -L https://get.rvm.io | bash -s stable --ignore-dotfiles
+else
+    echo "=> rvm already installed"
+fi
+
 # zsh plugin - zsh syntax highlight
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]
 then
-    echo Installing zsh-syntax-highlighting ...
+    echo "=> Installing zsh-syntax-highlighting ..."
+    echo -ne "\r=> "
     git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 fi
-echo Done
+
+echo "=> Done"
