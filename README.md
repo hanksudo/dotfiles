@@ -1,5 +1,8 @@
 # Dotfiles
 
+
+## Screenshot
+
 <img src="http://i.imgur.com/vzftD0D.png">
 
 
@@ -11,7 +14,8 @@ curl -L https://raw.github.com/hankwang/dotfiles/master/install.sh | sh
 
 ## Note
 
-* Use **z** command to jump around. [https://github.com/rupa/z](https://github.com/rupa/z) - Tracks your most used directories, based on 'frequency'.
+* [homebrew - The missing package manager for OS X](http://brew.sh/)
+* [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
 * Use [PTMono Fonts](http://www.paratype.com/public/)
 * Installed NVM ( [Node Version Manager](https://github.com/creationix/nvm) )
 * Installed RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
@@ -38,7 +42,7 @@ curl -L https://raw.github.com/hankwang/dotfiles/master/install.sh | sh
 
 ## Terminal Settings
 
-	$ script/osx
+	$ ~/.dotfiles/script/osx
 	
 Sometimes work not well, set Terminal Preferences yourself.
 
