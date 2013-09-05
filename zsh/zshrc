@@ -49,12 +49,14 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X1
 export PATH=~/bin:$PATH:/usr/local/share/npm/bin:~/.rvm/bin
 
 # nvm
-[[ -s /Users/hank/.nvm/nvm.sh ]] && . /Users/hank/.nvm/nvm.sh  # This loads NVM
+[[ -s ~/.nvm/nvm.sh ]] && . /Users/hank/.nvm/nvm.sh  # This loads NVM
 
 # Added Go paths
-export GOPATH=$HOME/goProjects
-export GOROOT=`go env GOROOT`
-export PATH=$PATH:$GOPATH/bin
+if type go > /dev/null; then
+    export GOPATH=$HOME/goProjects
+    export GOROOT=`go env GOROOT`
+    export PATH=$PATH:$GOPATH/bin
+fi
 
 # zmv '(*).html $1.haml'
 # http://zshwiki.org/home/builtin/functions/zmv
@@ -102,7 +104,7 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 alias diff='diff -u'
 
 # `cat` with beautiful colors. requires Pygments installed.
-#                  sudo easy_install Pygments
+# sudo easy_install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # IP addresses
