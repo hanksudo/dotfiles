@@ -94,6 +94,9 @@ alias lsf='ll | grep "^-"'  # List only files
 alias cp='cp -i'
 alias mv='mv -i'
 
+# Display a tree-like structural of any directory
+alias tree="ls -R | grep ":" | sed -e 's/://' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+
 alias hosts='sudo $EDITOR /etc/hosts'
 alias sshc='$EDITOR ~/.ssh/config'
 
