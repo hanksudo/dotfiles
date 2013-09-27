@@ -26,4 +26,4 @@ else
     brew update
 fi
 
-script/bootstrap
+$HOME/.dotfiles/script/bootstrap
