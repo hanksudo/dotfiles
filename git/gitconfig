@@ -16,6 +16,7 @@ email = @EMAIL@
     sc = stash clear
     ss = stash save
     pr = pull --rebase
+    prp = !git pr && git push
     undo = reset --soft HEAD^
 
     l1 = !git --no-pager log --max-count=1 HEAD
