@@ -26,4 +26,12 @@ else
     brew update
 fi
 
+# git-extras
+# https://github.com/visionmedia/git-extras
+if ! type git-extras > /dev/null; then
+    echo "=> Installing git-extras ..."
+    echo -ne "\r=> "
+    (cd /tmp && git clone --depth 1 https://github.com/visionmedia/git-extras.git && cd git-extras && sudo make install)
+fi
+
 $HOME/.dotfiles/script/bootstrap
