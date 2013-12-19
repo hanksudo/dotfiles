@@ -84,15 +84,6 @@ echo "=> Installing GNU core utilities ..."
 echo -ne "\r=> "
 brew install coreutils
 
-# Node Version Manager
-if ! [[ -s ~/.nvm/nvm.sh ]]; then
-    echo "=> Installing nvm ..."
-    echo -ne "\r=> "
-    curl -s https://raw.github.com/creationix/nvm/master/install.sh | sh
-else
-    echo "=> nvm already installed"
-fi
-
 # Ruby enVironment Manager
 if ! type rvm > /dev/null; then
     echo "=> Installing rvm ..."

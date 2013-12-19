@@ -48,9 +48,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 export PATH=~/bin:$PATH:/usr/local/share/npm/bin:~/.rvm/bin
 
-# nvm
-[[ -s ~/.nvm/nvm.sh ]] && . /Users/hank/.nvm/nvm.sh  # This loads NVM
-
 # Added Go paths
 if type go > /dev/null; then
     export GOPATH=$HOME/goProjects
