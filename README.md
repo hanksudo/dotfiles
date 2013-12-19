@@ -16,6 +16,7 @@ curl -L https://raw.github.com/hankwang/dotfiles/master/install.sh | sh
 
 * [homebrew - The missing package manager for OS X](http://brew.sh/)
 * [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
+* [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
 * Use [PTMono Fonts](http://www.paratype.com/public/)
 * Installed RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
 
