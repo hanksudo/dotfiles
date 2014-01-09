@@ -84,6 +84,12 @@ echo "=> Installing GNU core utilities ..."
 echo -ne "\r=> "
 brew install coreutils
 
+# ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.
+# https://github.com/petdance/ack2
+echo "=> Installing ack2 ..."
+echo -ne "\r=> "
+brew install ack
+
 # Ruby enVironment Manager
 if ! type rvm > /dev/null; then
     echo "=> Installing rvm ..."
