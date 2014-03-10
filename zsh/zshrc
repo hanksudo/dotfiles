@@ -118,3 +118,7 @@ alias whois="whois -h whois-servers.net"
 # default 'Open With ...'
 alias -s md=open
 alias -s html=open
+
+# shorten
+alias v=vagrant
+
