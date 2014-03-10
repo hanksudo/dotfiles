@@ -56,3 +56,7 @@ server() {
     local port="${1:-8000}"
     (sleep 1.5 && open "http://localhost:${port}/") && python -m SimpleHTTPServer "$port"
 }
+
+# http://www.gitignore.io
+# Create useful .gitignore files for your project
+function gi() { curl http://www.gitignore.io/api/$@ ;}
