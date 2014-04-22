@@ -124,4 +124,6 @@ alias -s html=open
 
 # shorten
 alias v=vagrant
+alias bb=buildbot
 
+alias clean_pyc="find . -name \*.pyc -delete"
