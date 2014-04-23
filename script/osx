@@ -1,5 +1,14 @@
+#!/usr/bin/env bash
+
 # Terminal
 # ========
+# ~/.osx — http://mths.be/osx
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 open "terminal/hankwang.terminal"
 sleep 1
@@ -9,3 +18,10 @@ defaults write com.apple.terminal 'Default Window Settings' -string 'hankwang'
 
 # Don't generated DS_Store
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+# Set auto-hide dock
+defaults write com.apple.Dock autohide -int 1
+
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
