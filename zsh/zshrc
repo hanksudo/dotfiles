@@ -64,7 +64,7 @@ export EDITOR=vim
 
 # autojump - https://github.com/joelthelion/autojump
 # A cd command that learns - easily navigate directories from the command line
-[[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # extra functions
 source ~/.functions
