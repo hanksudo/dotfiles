@@ -19,7 +19,7 @@ fi
 if ! type brew > /dev/null; then
     echo "=> Installing homebrew ..."
     echo -ne "\r=> "
-    ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 else
     echo "=> homebrew exists, updating ..."
     echo -ne "\r=> "
