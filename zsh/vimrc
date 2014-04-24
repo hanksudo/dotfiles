@@ -1,0 +1,51 @@
+set encoding=utf-8
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+
+
+" Enable syntax highlighting - 開啓語法高亮顯示
+syntax on
+
+set nocompatible
+
+" display line number on the left - 顯示行號
+set number
+
+set cursorline
+
+" When opening a new line and no filetype-specific indenting is enabled, keep
+" the same indent as the line you're currently on. Useful for READMEs, etc.
+set autoindent
+
+" Display the cursor position on the last line of the screen or in the status line of a window
+set ruler
+
+" Always display the status line, even if only one window is displayed
+set laststatus=2
+
+set wildmenu
+set showcmd
+
+" Indent options
+set shiftwidth=4
+set softtabstop=4
+set expandtab " space 代替 tab
+
+
+" Allow backspacing over autoindent, line breaks and start of insert action
+set backspace=indent,eol,start
+
+" Some Linux distributions set filetype in /etc/vimrc.
+" Clear filetype flags before changing runtimepath to force Vim to reload them.
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
