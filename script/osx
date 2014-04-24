@@ -25,3 +25,8 @@ defaults write com.apple.Dock autohide -int 1
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 0
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Set Screen shot save path
+defaults write com.apple.screencapture location ~/Desktop/ScreenShots
+
+killall SystemUIServer
