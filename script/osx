@@ -29,4 +29,7 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 # Set Screen shot save path
 defaults write com.apple.screencapture location ~/Desktop/ScreenShots
 
+# Always keep windows
+defaults write -g NSQuitAlwaysKeepsWindows -bool true
+
 killall SystemUIServer
