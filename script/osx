@@ -32,4 +32,7 @@ defaults write com.apple.screencapture location ~/Desktop/ScreenShots
 # Always keep windows
 defaults write -g NSQuitAlwaysKeepsWindows -bool true
 
+# Terminal - Focus Follow Mouse
+defaults write com.apple.Terminal FocusFollowsMouse -string YES
+
 killall SystemUIServer
