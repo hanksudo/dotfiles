@@ -15,7 +15,6 @@ sleep 1
 defaults write com.apple.terminal 'Startup Window Settings' -string 'hankwang'
 defaults write com.apple.terminal 'Default Window Settings' -string 'hankwang'
 
-
 # Don't generated DS_Store
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
@@ -35,4 +34,8 @@ defaults write -g NSQuitAlwaysKeepsWindows -bool true
 # Terminal - Focus Follow Mouse
 defaults write com.apple.Terminal FocusFollowsMouse -string YES
 
+# Xcode - show line number
+defaults write com.apple.dt.Xcode DVTTextShowLineNumbers -bool true
+
 killall SystemUIServer
+
