@@ -1,0 +1,3 @@
+[
+    { "keys": ["alt+super+t"], "command": "insert_snippet", "args": {"name": "Packages/User/mako-translate.sublime-snippet"} }
+]
