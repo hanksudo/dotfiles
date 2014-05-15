@@ -41,18 +41,19 @@ fi
 
 gitconfig="${HOME}/.gitconfig"
 
-if [ ! -f "${gitconfig}" ]; then
-    echo "=> Configuring gitconfig ..."
-    echo -ne "\r=> "
+# if [ ! -f "${gitconfig}" ]; then
+# default to overwrite gitconfig
+echo "=> Configuring gitconfig ..."
+echo -ne "\r=> "
 
-    # use sed to substitute som @VAR@ by values saved in ${config}
-    sed "s/@NAME@/${name}/g; s/@EMAIL@/${email}/g" git/gitconfig > "${gitconfig}"
+# use sed to substitute som @VAR@ by values saved in ${config}
+sed "s/@NAME@/${name}/g; s/@EMAIL@/${email}/g" git/gitconfig > "${gitconfig}"
 
-    cp git/git-global-ignore ~/.git-global-ignore
-    cp git/git-global-attributes ~/.git-global-attributes
-else
-    echo "=> ${gitconfig} exists"
-fi
+cp git/git-global-ignore ~/.git-global-ignore
+cp git/git-global-attributes ~/.git-global-attributes
+# else
+#     echo "=> ${gitconfig} exists"
+# fi
 
 echo "=> Installing PTMono fonts ..."
 cp -fr fonts/PTMono/*ttf ~/Library/Fonts/
