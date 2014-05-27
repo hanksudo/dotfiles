@@ -17,6 +17,7 @@ email = @EMAIL@
     ss = stash save
     sp = stash pop
     sl = stash list
+    ssp = stash show -p
     pr = pull --rebase
     prp = !git pr && git push
     undo = reset --soft HEAD^
