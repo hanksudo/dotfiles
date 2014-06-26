@@ -14,20 +14,21 @@ curl -L https://raw.github.com/hankwang/dotfiles/master/install.sh | sh
 
 ## Note
 
-* [homebrew - The missing package manager for OS X](http://brew.sh/)
-* [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
-* [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
-* Use [PTMono Fonts](http://www.paratype.com/public/)
-* Installed RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
+- [homebrew - The missing package manager for OS X](http://brew.sh/)
+- [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
+- [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
+- Use [PTMono Fonts](http://www.paratype.com/public/)
+- Installed RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
 
 ## Extra alias & functions
 
-* Git alias inside **git/gitconfig**
-* [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
-* Use **gls(coreutils)** instead of ls. ( `$ brew install coreutils` )
-* **lsd** - list only directories
-* **hosts** - Quick edit /etc/hosts
-* **emptytrash** - Empty the Trash on all mounted volumes and the main HDD
+- Git alias inside **git/gitconfig**
+- [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
+- Use **gls(coreutils)** instead of ls. ( `$ brew install coreutils` )
+- **lsd** - list only directories
+- **hosts** - Quick edit /etc/hosts
+- **sshc** - Quick edit ~/.ssh/config
+- **emptytrash** - Empty the Trash on all mounted volumes and the main HDD
 * **c** - `cat` with beautiful colors. requires Pygments installed.
 <img src="http://i.imgur.com/lUdmw87.png">
 
