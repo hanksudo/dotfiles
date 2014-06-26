@@ -55,14 +55,17 @@ cp git/git-global-attributes ~/.git-global-attributes
 #     echo "=> ${gitconfig} exists"
 # fi
 
-echo "=> Installing PTMono fonts ..."
+echo "=> Copying PTMono fonts ..."
 cp -fr fonts/PTMono/*ttf ~/Library/Fonts/
 
-echo "=> Installing .zsh-theme ..."
+echo "=> Copying .zsh-theme ..."
 cp -f theme/paulmillr.zsh-theme ~/.oh-my-zsh/themes/
 
-echo "=> Installing .zshrc ..."
+echo "=> Copying .zshrc ..."
 cp -f zsh/zshrc ~/.zshrc
+
+echo "=> Copying .tmux.conf ..."
+cp -f zsh/tmux.conf zsh/.tmux.conf
 
 # change shell to zsh
 if [ $SHELL != '/bin/zsh' ]; then
@@ -70,7 +73,7 @@ if [ $SHELL != '/bin/zsh' ]; then
     chsh -s /bin/zsh
 fi
 
-echo "=> Installing .functions ..."
+echo "=> Copying .functions ..."
 cp -f zsh/functions ~/.functions
 
 # autojump - a faster way to navigate your filesystem
@@ -107,5 +110,10 @@ then
     echo -ne "\r=> "
     git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 fi
+
+# tmux - terminal multiplexer
+echo "=> Installing tmix ... "
+echo -ne "\r=> "
+brew install tmux
 
 echo "=> Done"
