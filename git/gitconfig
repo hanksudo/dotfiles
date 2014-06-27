@@ -1,8 +1,7 @@
 # .gitconfig
-
 [user]
-name = @NAME@
-email = @EMAIL@
+    name = @NAME@
+    email = @EMAIL@
 
 [alias]
     cis = commit --signoff
@@ -18,10 +17,10 @@ email = @EMAIL@
     sp = stash pop
     sl = stash list
     ssp = stash show -p
+    sua = submodule foreach git pull origin master
     pr = pull --rebase
     prp = !git pr && git push
     undo = reset --soft HEAD^
-
     l1 = !git --no-pager log --max-count=1 HEAD
     l3 = !git --no-pager log --max-count=3 HEAD
     log5 = log --max-count=5 HEAD
