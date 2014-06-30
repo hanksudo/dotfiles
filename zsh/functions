@@ -57,6 +57,7 @@ server() {
     (sleep 1.5 && open "http://localhost:${port}/") && python -m SimpleHTTPServer "$port"
 }
 
-# http://www.gitignore.io
-# Create useful .gitignore files for your project
-function gi() { curl http://www.gitignore.io/api/$@ ;}
+# list all litening port
+showlistenport() {
+    sudo lsof -i -P | grep -i "listen"
+}
