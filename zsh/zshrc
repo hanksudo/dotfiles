@@ -127,3 +127,4 @@ alias v=vagrant
 alias bb=buildbot
 
 alias clean_pyc="find . -name \*.pyc -delete"
+alias grep="grep -i --color"
