@@ -1,8 +1,19 @@
 {
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "<",
+			"selector": "text.html"
+		},
+		{
+			"characters": " ",
+			"selector": "text.html meta.tag"
+		}
+	],
 	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
 	"detect_slow_plugins": false,
 	"font_face": "Source Code Pro",
-	"font_size": 20.0,
+	"font_size": 19.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -12,5 +23,21 @@
 	"tab_size": 4,
 	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		".DS_Store",
+		"*.min.js",
+		"*.log"
+	],
+	"folder_exclude_patterns":
+	[
+		".cache",
+		"tmp",
+		"logs",
+		"node_modules",
+		".git",
+		".vagrant"
+	]
 }
