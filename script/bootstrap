@@ -65,7 +65,7 @@ echo "=> Copying .zshrc ..."
 cp -f zsh/zshrc ~/.zshrc
 
 echo "=> Copying .tmux.conf ..."
-cp -f zsh/tmux.conf zsh/.tmux.conf
+cp -f zsh/tmux.conf ~/.tmux.conf
 
 # change shell to zsh
 if [ $SHELL != '/bin/zsh' ]; then
@@ -94,7 +94,19 @@ echo "=> Installing ack2 ..."
 echo -ne "\r=> "
 brew install ack
 
-# Ruby enVironment Manager
+# HTTPie: a CLI, cURL-like tool for humans
+# https://github.com/jakubroztocil/httpie
+echo "=> Installing httpie ..."
+echo -ne "\r=> "
+brew install httpie
+
+# git-extras
+# https://github.com/visionmedia/git-extras
+echo "=> Installing git-extras ..."
+echo -ne "\r=> "
+brew install git-extras
+
+# Ruby environment Manager
 if ! type rvm > /dev/null; then
     echo "=> Installing rvm ..."
     echo -ne "\r=> "

@@ -19,6 +19,8 @@ curl -L https://raw.github.com/hankwang/dotfiles/master/install.sh | sh
 - [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
 - Use [PTMono Fonts](http://www.paratype.com/public/)
 - Installed RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
+- [HTTPie: a CLI, cURL-like tool for humans](https://github.com/jakubroztocil/httpie)
+- [ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.](https://github.com/petdance/ack2)
 
 ## Extra alias & functions
 
