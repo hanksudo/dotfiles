@@ -15,6 +15,9 @@ sleep 1
 defaults write com.apple.terminal 'Startup Window Settings' -string 'hankwang'
 defaults write com.apple.terminal 'Default Window Settings' -string 'hankwang'
 
+# Disable local Time Machine snapshots
+sudo tmutil disablelocal
+
 # Set auto-hide dock
 defaults write com.apple.Dock autohide -int 1
 
@@ -31,6 +34,16 @@ defaults write -g NSQuitAlwaysKeepsWindows -bool true
 # Terminal - Focus Follow Mouse
 defaults write com.apple.Terminal FocusFollowsMouse -string YES
 
+# Show battery life percentage.
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+#################
+# Accessibility #
+#################
+
+# Use scroll gesture with the Ctrl (^) modifier key to zoom
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+
 ##########
 # Finder #
 ##########
@@ -40,6 +53,9 @@ defaults write com.apple.finder ShowStatusBar -bool true
 
 # Finder: show path bar
 defaults write com.apple.finder ShowPathbar -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Don't generated DS_Store
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
