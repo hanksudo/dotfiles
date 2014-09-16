@@ -33,7 +33,6 @@
 	],
 	"folder_exclude_patterns":
 	[
-		".cache",
 		"tmp",
 		"logs",
 		"node_modules",
