@@ -35,9 +35,9 @@ if ! type pod > /dev/null; then
     echo -ne "\r=> "
     sudo gem install cocoapods
 else
-    echo "=> cocoapods exists, updating ..."
+    echo "=> cocoapods already exists, if you need update, execute \n $ sudo gem install cocoapods"
     echo -ne "\r=> "
-    sudo gem install cocoapods
+    # sudo gem install cocoapods
 fi
 echo -ne "\r"
 
