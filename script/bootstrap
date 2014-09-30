@@ -106,6 +106,12 @@ echo "=> Installing git-extras ..."
 echo -ne "\r=> "
 brew install git-extras
 
+# zsh-completions
+# https://github.com/zsh-users/zsh-completions
+echo "=> Installing zsh-completions ..."
+echo -ne "\r=> "
+brew install zsh-completions
+
 # Ruby environment Manager
 if ! type rvm > /dev/null; then
     echo "=> Installing rvm ..."
