@@ -58,6 +58,6 @@ server() {
 }
 
 # list all litening port
-showlistenport() {
+ports() {
     sudo lsof -i -P | grep -i "listen"
 }
