@@ -55,3 +55,9 @@ Sometimes work not well, set Terminal Preferences yourself.
 ## .zsh-theme
 
 Refer [paulmillr](https://github.com/paulmillr/dotfiles)'s .zsh-theme, and minor changes.
+
+## More fun command lines
+
+- pow
+- fortune
+- sl
