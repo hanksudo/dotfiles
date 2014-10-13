@@ -58,6 +58,6 @@ Refer [paulmillr](https://github.com/paulmillr/dotfiles)'s .zsh-theme, and minor
 
 ## More fun command lines
 
-- pow
+- pom
 - fortune
 - sl
