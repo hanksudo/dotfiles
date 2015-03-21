@@ -10,26 +10,20 @@
 			"selector": "text.html meta.tag"
 		}
 	],
-	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/base16-eighties.dark (SL).tmTheme",
 	"detect_slow_plugins": false,
-	"font_face": "Source Code Pro",
-	"font_size": 19.0,
-	"highlight_line": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"soda_classic_tabs": false,
-	"tab_size": 4,
-	"theme": "Spacegray.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
 	"ensure_newline_at_eof_on_save": true,
-	"file_exclude_patterns":
+	"binary_file_patterns": // hide in GoToAnything
+	[
+
+	],
+	"file_exclude_patterns": // hide in GoToAnything and sidebar
 	[
 		".DS_Store",
-		"*.min.js",
-		"*.log"
+		"*min.js",
+		"*.map",
+		"*.log",
+		"*.pyc",
 	],
 	"folder_exclude_patterns":
 	[
@@ -38,5 +32,20 @@
 		"node_modules",
 		".git",
 		".vagrant"
-	]
+	],
+	"font_face": "Source Code Pro",
+	"font_size": 22.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Jade",
+		"Vintage",
+		"JsFormat",
+		"BracketHighlighter"
+	],
+	"soda_classic_tabs": false,
+	"tab_size": 4,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
