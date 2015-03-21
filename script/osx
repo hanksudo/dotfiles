@@ -32,7 +32,7 @@ defaults write com.apple.screencapture location ~/Desktop/ScreenShots
 defaults write -g NSQuitAlwaysKeepsWindows -bool true
 
 # Terminal - Focus Follow Mouse
-defaults write com.apple.Terminal FocusFollowsMouse -string YES
+defaults write com.apple.Terminal FocusFollowsMouse -string "NO"
 
 # Show battery life percentage.
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
