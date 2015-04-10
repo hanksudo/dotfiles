@@ -33,7 +33,7 @@
 		".git",
 		".vagrant"
 	],
-	"font_face": "Source Code Pro",
+	"font_face": "PT Mono",
 	"font_size": 22.0,
 	"highlight_line": true,
 	"ignored_packages":
