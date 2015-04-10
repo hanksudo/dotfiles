@@ -13,7 +13,7 @@ else
     git clone https://github.com/hankwang/dotfiles.git $HOME/.dotfiles
     cd $HOME/.dotfiles
 fi
-echo -ne "\r"
+echo "\r"
 
 # Homebrew - The missing package manager for OS X
 # http://brew.sh/
@@ -26,7 +26,7 @@ else
     echo -ne "\r=> "
     brew update
 fi
-echo -ne "\r"
+echo "\r"
 
 # CocoaPods is the dependency manager for Objective-C projects
 # http://cocoapods.org/
@@ -39,6 +39,6 @@ else
     echo -ne "\r=> "
     # sudo gem install cocoapods
 fi
-echo -ne "\r"
+echo "\r"
 
 $HOME/.dotfiles/script/bootstrap

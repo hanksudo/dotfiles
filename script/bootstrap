@@ -59,7 +59,7 @@ echo "=> Copying PTMono fonts ..."
 cp -fr fonts/PTMono/*ttf ~/Library/Fonts/
 
 echo "=> Copying .zsh-theme ..."
-cp -f theme/paulmillr.zsh-theme ~/.oh-my-zsh/themes/
+cp -f theme/hanksudo.zsh-theme ~/.oh-my-zsh/themes/
 
 echo "=> Copying .zshrc ..."
 cp -f zsh/zshrc ~/.zshrc
