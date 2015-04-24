@@ -9,7 +9,7 @@
 ## Install
 
 ```
-curl -L https://raw.github.com/hankwang/dotfiles/master/install.sh | sh
+curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 ```
 
 ## Note
@@ -49,7 +49,7 @@ curl -L https://raw.github.com/hankwang/dotfiles/master/install.sh | sh
 
 Sometimes work not well, set Terminal Preferences yourself.
 
-* Import terminal/hankwang.terminal then set to default.
+* Import terminal/hanksudo.terminal then set to default.
 * Set Fonts PTMono/ Font Size: 15pt.
 
 ## .zsh-theme

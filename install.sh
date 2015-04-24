@@ -10,7 +10,7 @@ if [ -d "$HOME/.dotfiles" ]; then
     cd $HOME/.dotfiles && git pull
 else
     echo "=> clone dotfiles from Github..."
-    git clone https://github.com/hankwang/dotfiles.git $HOME/.dotfiles
+    git clone https://github.com/hanksudo/dotfiles.git $HOME/.dotfiles
     cd $HOME/.dotfiles
 fi
 echo "\r"
