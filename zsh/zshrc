@@ -130,4 +130,4 @@ alias bb=buildbot
 alias grep="grep -i --color"
 
 # Set Docker Host
-export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2375
+export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
