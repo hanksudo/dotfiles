@@ -129,5 +129,5 @@ alias bb=buildbot
 # alias clean_pyc="find . -name \*.pyc -delete"
 alias grep="grep -i --color"
 
-# Set Docker Host
-export DOCKER_HOST=tcp://$(boot2docker ip 2>/dev/null):2376
+# Set Docker Env
+$(boot2docker shellinit)
