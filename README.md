@@ -31,6 +31,7 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 - [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
 - Use [PTMono Fonts](http://www.paratype.com/public/)
 - Installed RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
+- [n - Node version management](https://github.com/tj/n)
 - [HTTPie: a CLI, cURL-like tool for humans](https://github.com/jakubroztocil/httpie)
 - [ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.](https://github.com/petdance/ack2)
 
@@ -43,26 +44,26 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 - **hosts** - Quick edit /etc/hosts
 - **sshc** - Quick edit ~/.ssh/config
 - **emptytrash** - Empty the Trash on all mounted volumes and the main HDD
-* **c** - `cat` with beautiful colors. requires Pygments installed.
+- **c** - `cat` with beautiful colors. requires Pygments installed.
 <img src="http://i.imgur.com/lUdmw87.png">
 
-* **ip** - detect IP by remote server
-* **localip** - local ip
-* **ips** - IPv4 IPs
-* **whois** - Enhanced WHOIS lookups
-* **gz** - get gzipped size
-* **extract** - Extract archives - use: extract <file>
-* **mkcd** - Make dir and cd into.
-* **server** - Start an HTTP server from a directory, optionally specifying the port.
+- **ip** - detect IP by remote server
+- **localip** - local ip
+- **ips** - IPv4 IPs
+- **whois** - Enhanced WHOIS lookups
+- **gz** - get gzipped size
+- **extract** - Extract archives - use: extract <file>
+- **mkcd** - Make dir and cd into.
+- **server** - Start an HTTP server from a directory, optionally specifying the port.
 
 ## Terminal Settings
 
-	$ ~/.dotfiles/script/osx
+	~/.dotfiles/script/osx
 
-Sometimes work not well, set Terminal Preferences yourself.
+Sometimes work not well, set Terminal Preferences by yourself:
 
-* Import terminal/hanksudo.terminal then set to default.
-* Set Fonts PTMono/ Font Size: 15pt.
+- Import `terminal/hanksudo.terminal` then set to default.
+- Set Fonts `PTMono`/ Font Size: `15pt`.
 
 ## .zsh-theme
 
