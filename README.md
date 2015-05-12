@@ -16,6 +16,7 @@
 ## Screenshot
 
 <img src="http://i.imgur.com/vzftD0D.png">
+![](https://github.com/hanksudo/dotfiles/blob/master/screenshots/terminal.png)
 
 
 ## Install
