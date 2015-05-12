@@ -15,9 +15,7 @@
 
 ## Screenshot
 
-<img src="http://i.imgur.com/vzftD0D.png">
 ![](https://github.com/hanksudo/dotfiles/blob/master/screenshots/terminal.png)
-
 
 ## Install
 
@@ -46,11 +44,12 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 - **sshc** - Quick edit ~/.ssh/config
 - **emptytrash** - Empty the Trash on all mounted volumes and the main HDD
 - **c** - `cat` with beautiful colors. requires Pygments installed.
-<img src="http://i.imgur.com/lUdmw87.png">
+![](https://github.com/hanksudo/dotfiles/blob/master/screenshots/c.png)
 
 - **ip** - detect IP by remote server
 - **localip** - local ip
 - **ips** - IPv4 IPs
+- **ports** - list all listening ports (sudo required)
 - **whois** - Enhanced WHOIS lookups
 - **gz** - get gzipped size
 - **extract** - Extract archives - use: extract <file>
