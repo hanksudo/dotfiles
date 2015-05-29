@@ -7,7 +7,6 @@
     cis = commit --signoff
     ci = commit
     co = checkout
-    pr = pull --rebase
     st = status
     br = branch
     praise = blame
