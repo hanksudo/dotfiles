@@ -131,7 +131,7 @@ brew install tmux
 # install python libraries
 echo "=> Installing python libs... "
 echo -ne "\r=> "
-sudo pip install --upgrade pip setuptools
-sudo pip install -r ${DOTFILES_ROOT}/requirements.txt
+pip install --upgrade pip setuptools
+pip install -r ${DOTFILES_ROOT}/requirements.txt
 
 echo "=> Done"

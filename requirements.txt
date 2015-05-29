@@ -5,6 +5,7 @@ virtualenv
 
 httpie
 Pygments
+mkdocs
 
 Twisted
 python-dateutil
