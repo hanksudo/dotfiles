@@ -1,0 +1,14 @@
+coverage
+autopep8
+flake8
+virtualenv
+
+httpie
+Pygments
+
+Twisted
+python-dateutil
+pytz
+celery
+BeautifulSoup
+
