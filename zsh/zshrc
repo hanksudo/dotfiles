@@ -107,7 +107,6 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 alias diff='diff -u'
 
 # `cat` with beautiful colors. requires Pygments installed.
-# sudo pip install Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # IP addresses
