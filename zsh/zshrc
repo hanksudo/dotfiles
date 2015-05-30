@@ -52,7 +52,6 @@ export PATH=~/bin:$PATH:/usr/local/share/npm/bin:~/.rvm/bin
 if type go > /dev/null; then
     export GOPATH=$HOME/goProjects
     export GOROOT=`go env GOROOT`
-    export GOBIN=$GOROOT/bin
     export PATH=$PATH:$GOPATH/bin
 fi
 
