@@ -96,9 +96,9 @@ brew install ack
 
 # git-extras
 # https://github.com/visionmedia/git-extras
-echo "=> Installing git-extras ..."
-echo -ne "\r=> "
-brew install git-extras
+#echo "=> Installing git-extras ..."
+#echo -ne "\r=> "
+#brew install git-extras
 
 # zsh-completions
 # https://github.com/zsh-users/zsh-completions
