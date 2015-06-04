@@ -95,10 +95,11 @@ echo -ne "\r=> "
 brew install ack
 
 # git-extras
-# https://github.com/visionmedia/git-extras
-#echo "=> Installing git-extras ..."
-#echo -ne "\r=> "
-#brew install git-extras
+https://github.com/visionmedia/git-extras
+echo "=> Installing git-extras ..."
+echo -ne "\r=> "
+brew install git-extras
+rm `which git-pr` # I don't need this, and it broken my alias `git pull --rebase`
 
 # zsh-completions
 # https://github.com/zsh-users/zsh-completions
