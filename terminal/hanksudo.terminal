@@ -140,7 +140,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NLMCAw
-	IDAgMC43NQAQAYAC0hAREhNaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5T
+	IDAgMC44NQAQAYAC0hAREhNaJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5T
 	T2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2JucHJ3
 	gouTlp+xtLkAAAAAAAABAQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAAuw==
 	</data>
@@ -162,7 +162,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKQHCBESVSRudWxs1AkKCwwNDg8QVk5TU2l6ZVhOU2ZGbGFnc1ZOU05hbWVWJGNs
-	YXNzI0AuAAAAAAAAEBCAAoADXlBUTW9uby1SZWd1bGFy0hMUFRZaJGNsYXNzbmFtZVgk
+	YXNzI0AyAAAAAAAAEBCAAoADXlBUTW9uby1SZWd1bGFy0hMUFRZaJGNsYXNzbmFtZVgk
 	Y2xhc3Nlc1ZOU0ZvbnSiFRdYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRGhtUcm9v
 	dIABCBEaIy0yNzxCS1JbYmlydHZ4h4yXoKeqs8XIzQAAAAAAAAEBAAAAAAAAABwAAAAA
 	AAAAAAAAAAAAAADP
@@ -174,7 +174,7 @@
 	<key>Linewrap</key>
 	<true/>
 	<key>ProfileCurrentVersion</key>
-	<real>2.02</real>
+	<real>2.04</real>
 	<key>ScrollbackLines</key>
 	<integer>96000</integer>
 	<key>SelectionColor</key>
@@ -188,7 +188,7 @@
 	<key>ShouldLimitScrollback</key>
 	<integer>1</integer>
 	<key>ShowActiveProcessInTitle</key>
-	<false/>
+	<true/>
 	<key>ShowCommandKeyInTitle</key>
 	<false/>
 	<key>ShowDimensionsInTitle</key>
