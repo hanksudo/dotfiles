@@ -41,4 +41,10 @@ else
 fi
 echo "\r"
 
+# install vim
+# https://github.com/hanksudo/vimrc
+curl -L https://raw.github.com/hanksudo/vimrc/master/install.sh | sh
+echo "\r"
+
 $HOME/.dotfiles/script/bootstrap
+
