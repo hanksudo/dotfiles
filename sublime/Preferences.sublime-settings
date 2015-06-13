@@ -5,25 +5,40 @@
 			"characters": "<",
 			"selector": "text.html"
 		},
-		{
-			"characters": " ",
-			"selector": "text.html meta.tag"
-		}
+  		{
+     		"characters": "/",
+     		"selector": "string.quoted.double.html,string.quoted.single.html, source.css"
+  		}
+	],
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.m4a",
+		"*.mp3",
+		"*.bmp"
 	],
 	"color_scheme": "Packages/User/SublimeLinter/base16-eighties.dark (SL).tmTheme",
 	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
-	"binary_file_patterns": // hide in GoToAnything
-	[
-
-	],
-	"file_exclude_patterns": // hide in GoToAnything and sidebar
+	"file_exclude_patterns":
 	[
 		".DS_Store",
 		"*min.js",
 		"*.map",
 		"*.log",
-		"*.pyc",
+		"*.pyc"
 	],
 	"folder_exclude_patterns":
 	[
@@ -31,17 +46,16 @@
 		"logs",
 		"node_modules",
 		".git",
-		".vagrant"
+		".vagrant",
+		".cache"
 	],
-	"font_face": "PT Mono",
-	"font_size": 22.0,
+	"font_face": "Source Code Pro",
+	"font_size": 23.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Jade",
 		"Vintage",
-		"JsFormat",
-		"BracketHighlighter"
+		"Markdown"
 	],
 	"soda_classic_tabs": false,
 	"tab_size": 4,

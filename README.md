@@ -65,6 +65,37 @@ Sometimes work not well, set Terminal Preferences by yourself:
 - Import `terminal/hanksudo.terminal` then set to default.
 - Set Fonts `PTMono`/ Font Size: `15pt`.
 
+## Sublime Text 3 Packages
+
+- [Anaconda](https://github.com/DamnWidget/anaconda)
+- [AutoFileName](https://github.com/BoundInCode/AutoFileName)
+- Babel
+- BracketHighlighter
+- DashDoc
+- Dockerfile Syntax Highlighting
+- EditorConfig
+- EJS
+- [Emmet](https://github.com/sergeche/emmet-sublime)
+- [GitCommitMsg](https://github.com/cbumgard/GitCommitMsg)
+- GitGutter
+- GoSublime
+- Hayaku - tools for writing CSS faster
+- Jade
+- JsFormat
+- Mako
+- [Markdown Preview](https://github.com/revolunet/sublimetext-markdown-preview)
+- [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing)
+- [Package Control](https://github.com/wbond/package_control)
+- [PlainTasks](https://github.com/aziz/PlainTasks)
+- Pretty JSON
+- requirementstxt
+- Sass
+- [SQLExec](https://github.com/jum4/sublime-sqlexec)
+- SublimeLinter
+- SublimeLinter-contrib-eslint
+- Theme - Spacegray
+- [TodoReview](https://github.com/jonathandelgado/SublimeTodoReview)
+
 ## .zsh-theme
 
 Refer [paulmillr](https://github.com/paulmillr/dotfiles)'s .zsh-theme, and minor changes.
