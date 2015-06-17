@@ -13,3 +13,4 @@ pytz
 celery
 BeautifulSoup
 
+thefuck

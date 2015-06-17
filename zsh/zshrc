@@ -137,8 +137,10 @@ $(boot2docker shellinit)
 
 # Docker shortcuts
 alias d="docker"
-alias dcleanimages="docker images --no-trunc | grep '^<none>' | awk '{print $3}' | xargs docker rmi -f"
-alias dcleancontainers="docker ps -a -q -f "status=exited*" | xargs docker rm"
+alias dcleanimages="docker images | grep '<none>' | awk '{print $3}' | xargs docker rmi -f"
+alias dcleancontainers="docker ps -a -q -f 'status=exited*' | xargs docker rm"
 alias dclean="dcleancontainers && dcleanimages"
 
 fortune
+
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
