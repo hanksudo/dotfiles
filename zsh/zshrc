@@ -40,7 +40,7 @@ ZSH_THEME="hanksudo"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws brew npm pip gem python sublime zsh-syntax-highlighting vagrant docker)
+plugins=(aws brew npm pip gem python sublime zsh-syntax-highlighting vagrant docker docker-compose boot2docker httpie)
 
 source $ZSH/oh-my-zsh.sh
 
