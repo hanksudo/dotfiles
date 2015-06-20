@@ -5,10 +5,10 @@
 			"characters": "<",
 			"selector": "text.html"
 		},
-  		{
-     		"characters": "/",
-     		"selector": "string.quoted.double.html,string.quoted.single.html, source.css"
-  		}
+		{
+			"characters": "/",
+			"selector": "string.quoted.double.html,string.quoted.single.html, source.css"
+		}
 	],
 	"binary_file_patterns":
 	[
@@ -49,16 +49,17 @@
 		".vagrant",
 		".cache"
 	],
-    "font_options": [
-        "gray_antialias"
-    ],
 	"font_face": "Source Code Pro",
+	"font_options":
+	[
+		"gray_antialias"
+	],
 	"font_size": 23.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Markdown"
+		"Markdown",
+		"Vintage"
 	],
 	"soda_classic_tabs": false,
 	"tab_size": 4,
