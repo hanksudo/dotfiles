@@ -41,6 +41,21 @@ else
 fi
 echo "\r"
 
+# A command-line fuzzy finder written in Go
+# https://github.com/junegunn/fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if ! type pod > /dev/null; then
+    echo "=> Installing fzf ..."
+    echo -ne "\r=> "
+    brew install --HEAD fzf
+    # Install shell extensions
+    /usr/local/Cellar/fzf/HEAD/install
+else
+    echo "=> fzf already exists, if you need update, execute brew reinstall --HEAD fzf\n"
+    echo -ne "\r=> "
+fi
+echo "\r"
+
 # install vim
 # https://github.com/hanksudo/vimrc
 curl -L https://raw.github.com/hanksudo/vimrc/master/install.sh | sh

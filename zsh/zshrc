@@ -144,3 +144,7 @@ alias dclean="dcleancontainers && dcleanimages"
 fortune
 
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
+# A command-line fuzzy finder written in Go
+# https://github.com/junegunn/fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
