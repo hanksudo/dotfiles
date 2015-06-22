@@ -34,6 +34,7 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 - [HTTPie: a CLI, cURL-like tool for humans](https://github.com/jakubroztocil/httpie)
 - [ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.](https://github.com/petdance/ack2)
 - [thefuck - Magnificent app which corrects your previous console command.](https://github.com/nvbn/thefuck)
+- [A command-line fuzzy finder written in Go](https://github.com/junegunn/fzf)
 
 ## Extra alias & functions
 
