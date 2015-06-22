@@ -125,7 +125,7 @@ then
 fi
 
 # tmux - terminal multiplexer
-echo "=> Installing tmix ... "
+echo "=> Installing tmux ... "
 echo -ne "\r=> "
 brew install tmux
 
