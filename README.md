@@ -19,10 +19,17 @@
 
 ## Install
 
-```
-curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
-```
+    curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 
+## OSX and Terminal Settings
+
+    ~/.dotfiles/script/osx
+
+Sometimes work not well, set Terminal Preferences by yourself:
+
+- Import `terminal/hanksudo.terminal` then set to default.
+- Set Fonts `PTMono`/ Font Size: `15pt`.
+- 
 ## Note
 
 - [homebrew - The missing package manager for OS X](http://brew.sh/)
@@ -57,15 +64,6 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 - **extract** - Extract archives - use: extract <file>
 - **mkcd** - Make dir and cd into.
 - **server** - Start an HTTP server from a directory, optionally specifying the port.
-
-## Terminal Settings
-
-	~/.dotfiles/script/osx
-
-Sometimes work not well, set Terminal Preferences by yourself:
-
-- Import `terminal/hanksudo.terminal` then set to default.
-- Set Fonts `PTMono`/ Font Size: `15pt`.
 
 ## Sublime Text 3 Packages
 
