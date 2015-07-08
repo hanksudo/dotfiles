@@ -55,6 +55,7 @@ Sometimes work not well, set Terminal Preferences by yourself:
 - **c** - `cat` with beautiful colors. requires Pygments installed.
 ![](https://github.com/hanksudo/dotfiles/blob/master/screenshots/c.png)
 
+- **ccat** Colorizing `cat` (https://github.com/jingweno/ccat)
 - **ip** - detect IP by remote server
 - **localip** - local ip
 - **ips** - IPv4 IPs

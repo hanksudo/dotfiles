@@ -61,6 +61,7 @@ autoload -U zmv
 
 # default editor
 export EDITOR=vim
+alias e='${EDITOR}'
 
 # npm speed up npm on node-gyp
 export JOBS=max

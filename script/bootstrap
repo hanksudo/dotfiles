@@ -170,6 +170,11 @@ echo "=> Installing tmux ... "
 echo -ne "\r=> "
 brew install tmux
 
+# install ccat - Colorizing `cat` (https://github.com/jingweno/ccat)
+echo "=> Installing ccat ... "
+echo -ne "\r=> "
+brew install ccat
+
 # install python libraries
 echo "=> Installing python libs... "
 echo -ne "\r=> "
