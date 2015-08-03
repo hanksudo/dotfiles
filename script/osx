@@ -26,6 +26,7 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Set Screen shot save path
+mkdir -p ~/Desktop/ScreenShots
 defaults write com.apple.screencapture location ~/Desktop/ScreenShots
 
 # Always keep windows
