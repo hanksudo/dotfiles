@@ -40,7 +40,7 @@ ZSH_THEME="hanksudo"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws brew npm pip gem python sublime zsh-syntax-highlighting vagrant docker docker-compose boot2docker httpie)
+plugins=(aws brew npm pip gem python sublime zsh-syntax-highlighting vagrant docker docker-compose httpie)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -132,9 +132,6 @@ alias bb=buildbot
 
 # alias clean_pyc="find . -name \*.pyc -delete"
 alias grep="grep -i --color"
-
-# Set Docker Env
-$(boot2docker shellinit)
 
 # Docker shortcuts
 alias d="docker"
