@@ -50,7 +50,8 @@ defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 ##########
 
 # Finder: show hidden files
-defaults write com.apple.finder AppleShowAllFiles YES
+defaults write com.apple.finder AppleShowAllFiles -bool true
+chflags nohidden ~/Library
 
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -63,6 +64,9 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Don't generated DS_Store
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+# Don't default to saving documents to iCloud
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 #########
 # Xcode #
