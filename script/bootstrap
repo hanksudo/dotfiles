@@ -105,6 +105,9 @@ cp -f theme/hanksudo.zsh-theme ~/.oh-my-zsh/themes/
 echo "=> Copying .zshrc ..."
 cp -f zsh/zshrc ~/.zshrc
 
+echo "=> Copying .curlrc ..."
+cp -f zsh/curlrc ~/.curlrc
+
 echo "=> Copying .tmux.conf ..."
 cp -f zsh/tmux.conf ~/.tmux.conf
 
@@ -180,5 +183,17 @@ echo "=> Installing python libs... "
 echo -ne "\r=> "
 pip install --upgrade pip setuptools
 pip install -r ${DOTFILES_ROOT}/requirements.txt
+
+# use newest openssl
+echo "=> Installing openssl..."
+echo -ne "\r=> "
+brew install openssl
+brew link --force openssl
+
+# use newest curl with openssl
+echo "=> Installing curl..."
+echo -ne "\r=> "
+brew install curl --with-openssl
+brew link --force curl
 
 echo "=> Done"
