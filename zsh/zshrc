@@ -125,6 +125,8 @@ alias whois="whois -h whois-servers.net"
 # default 'Open With ...'
 alias -s md=open
 alias -s html=open
+alias -s json=open
+alias -s csv=open
 
 # shorten
 alias v=vagrant
@@ -133,6 +135,8 @@ alias bb=buildbot
 # alias clean_pyc="find . -name \*.pyc -delete"
 alias grep="grep -i --color"
 
+echo "Setting environment variables for machine $VM..."
+eval "$(docker-machine env default)"
 # Docker shortcuts
 alias d="docker"
 alias dcleanimages="docker images | grep '<none>' | awk '{print $3}' | xargs docker rmi -f"
