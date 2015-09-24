@@ -7,6 +7,12 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="hanksudo"
 
+BLUE='\033[0;34m'
+GREEN='\033[0;32m'
+NC='\033[0m'
+
+DOCKER_VM='default'
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -135,18 +141,25 @@ alias bb=buildbot
 # alias clean_pyc="find . -name \*.pyc -delete"
 alias grep="grep -i --color"
 
-echo "Setting environment variables for machine $VM..."
-eval "$(docker-machine env default)"
+# Magnificent app which corrects your previous console command.
+# https://github.com/nvbn/thefuck
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
 # Docker shortcuts
 alias d="docker"
+alias dip="docker-machine ip $DOCKER_VM"
 alias dcleanimages="docker images | grep '<none>' | awk '{print $3}' | xargs docker rmi -f"
 alias dcleancontainers="docker ps -a -q -f 'status=exited*' | xargs docker rm"
 alias dclean="dcleancontainers && dcleanimages"
 alias dcleaner="docker run -v /var/run/docker.sock:/var/run/docker.sock:rw -v /var/lib/docker:/var/lib/docker:rw meltwater/docker-cleanup:latest"
 
+# startup
+echo "Setting environment variables for machine $VM..."
+eval "$(docker-machine env default)"
+echo "Docker Machine IP: ${GREEN}$(dip)${NC}"
+
 fortune
 
-alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 # A command-line fuzzy finder written in Go
 # https://github.com/junegunn/fzf
