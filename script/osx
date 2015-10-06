@@ -21,11 +21,7 @@ sudo tmutil disablelocal
 # Set auto-hide dock
 defaults write com.apple.Dock autohide -int 1
 
-# Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
-
-# Set Screen shot save path
+# Customize Screen Shot save path
 mkdir -p ~/Desktop/ScreenShots
 defaults write com.apple.screencapture location ~/Desktop/ScreenShots
 
@@ -37,6 +33,32 @@ defaults write com.apple.Terminal FocusFollowsMouse -string "NO"
 
 # Show battery life percentage.
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+# Use plain text mode for new TextEdit documents
+defaults write com.apple.TextEdit RichText -int 0
+
+# Make bottom-right hotspot start screensaver
+defaults write com.apple.dock wvous-br-corner -int 5 && \
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+# Turn on dashboard-as-space
+defaults write com.apple.dashboard enabled-state 2
+
+# Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+############
+# Keyboard #
+############
+
+# Enable character repeat on keydown
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 0
+
+# Set a shorter Delay until key repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 #################
 # Accessibility #
@@ -62,11 +84,27 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Don't generated DS_Store
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+# Avoid creating .DS_Store files on network volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Don't default to saving documents to iCloud
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Set default Finder location to Downloads folder (~/Downloads)
+defaults write com.apple.finder NewWindowTarget -string "PfLo" && \
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads"
+
+# Use current directory as default search scope in Finder
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Show icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true && \
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true && \
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true && \
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+# Show absolute path in finder's title bar.
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 
 #########
 # Xcode #
@@ -76,4 +114,3 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 defaults write com.apple.dt.Xcode DVTTextShowLineNumbers -bool true
 
 killall SystemUIServer
-
