@@ -7,6 +7,8 @@
     cis = commit --signoff
     ci = commit
     co = checkout
+    ec = config -e
+    ecg = config -e --global
     st = status
     br = branch
     praise = blame

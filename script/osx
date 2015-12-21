@@ -21,6 +21,9 @@ sudo tmutil disablelocal
 # Set auto-hide dock
 defaults write com.apple.Dock autohide -int 1
 
+# resort LaunchPad icon order
+# defaults write com.apple.Dock ResetLaunchPad -bool true; killall Dock
+
 # Customize Screen Shot save path
 mkdir -p ~/Desktop/ScreenShots
 defaults write com.apple.screencapture location ~/Desktop/ScreenShots
