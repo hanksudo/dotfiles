@@ -29,14 +29,14 @@ Sometimes work not well, set Terminal Preferences by yourself:
 
 - Import `terminal/hanksudo.terminal` then set to default.
 - Set Fonts `PTMono`/ Font Size: `15pt`.
-- 
+
 ## Note
 
 - [homebrew - The missing package manager for OS X](http://brew.sh/)
 - [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
 - [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
 - Use [PTMono Fonts](http://www.paratype.com/public/)
-- Installed RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
+- RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
 - [n - Node version management](https://github.com/tj/n)
 - [HTTPie: a CLI, cURL-like tool for humans](https://github.com/jakubroztocil/httpie)
 - [ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.](https://github.com/petdance/ack2)
@@ -72,7 +72,7 @@ Sometimes work not well, set Terminal Preferences by yourself:
 - [AutoFileName](https://github.com/BoundInCode/AutoFileName)
 - Babel
 - BracketHighlighter
-- DashDoc
+- [DashDoc: Dash integration for Sublime Text](https://github.com/farcaller/DashDoc)
 - Dockerfile Syntax Highlighting
 - EditorConfig
 - EJS
@@ -94,14 +94,14 @@ Sometimes work not well, set Terminal Preferences by yourself:
 - [SQLExec](https://github.com/jum4/sublime-sqlexec)
 - SublimeLinter
 - SublimeLinter-contrib-eslint
-- Theme - Spacegray
+- [Theme - Spacegray](https://github.com/kkga/spacegray)
 - [TodoReview](https://github.com/jonathandelgado/SublimeTodoReview)
 
 ## .zsh-theme
 
-Refer [paulmillr](https://github.com/paulmillr/dotfiles)'s .zsh-theme, and minor changes.
+Based on [paulmillr](https://github.com/paulmillr/dotfiles)'s .zsh-theme.
 
-## More fun command lines
+## Command lines for fun
 
 - pom
 - fortune
