@@ -100,6 +100,7 @@
 [diff]
     color = auto
     renames = copy
+	tool = opendiff
 
 [color]
     branch = auto
@@ -163,3 +164,7 @@
     keepBackup = false
 [merge]
     tool = opendiff
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
