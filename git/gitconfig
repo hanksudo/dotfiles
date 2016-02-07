@@ -7,7 +7,10 @@
     cis = commit --signoff
     ci = commit
     all = commit -am
+    cm = commit -m
     co = checkout
+    di = diff
+    dic = diff --cached
     ec = config -e
     ecg = config -e --global
     st = status -sb
@@ -25,6 +28,7 @@
     undo = reset --soft HEAD^
     l1 = !git --no-pager log --max-count=1 HEAD
     l3 = !git --no-pager log --max-count=3 HEAD
+    l5 = !git --no-pager log --max-count=5 HEAD
     log5 = log --max-count=5 HEAD
 
     k = !gitk --all
