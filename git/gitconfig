@@ -6,10 +6,11 @@
 [alias]
     cis = commit --signoff
     ci = commit
+    all = commit -am
     co = checkout
     ec = config -e
     ecg = config -e --global
-    st = status
+    st = status -sb
     br = branch
     praise = blame
     sa = stash apply
