@@ -153,6 +153,9 @@ alias dcleancontainers="docker ps -a -q -f 'status=exited*' | xargs docker rm"
 alias dclean="dcleancontainers && dcleanimages"
 alias dcleaner="docker run -v /var/run/docker.sock:/var/run/docker.sock:rw -v /var/lib/docker:/var/lib/docker:rw meltwater/docker-cleanup:latest"
 
+# weather
+alias weather="curl wttr.in"
+
 # startup
 echo "Setting environment variables for machine $VM..."
 eval "$(docker-machine env default)"
