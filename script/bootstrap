@@ -196,4 +196,17 @@ echo -ne "\r=> "
 brew install curl --with-openssl
 brew link --force curl
 
+# scmpuff makes working with git from the command line quicker by substituting numeric shortcuts for filenames.
+# https://mroth.github.io/scmpuff/
+echo "=> Installing scmpuff..."
+echo -ne "\r=> "
+brew install scmpuff
+
+# Legit is a complementary command-line interface for Git, optimized for workflow simplicity.
+# http://www.git-legit.org/
+echo "=> Installing legit..."
+echo -ne "\r=> "
+brew install legit
+legit install
+
 echo "=> Done"
