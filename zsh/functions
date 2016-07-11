@@ -109,11 +109,13 @@ fshow() {
 }
 
 # mp3 - download mp3 from Youtube
+# - pip install youtube-dl
 mp3() {
   youtube-dl -x --audio-format mp3 $1
 }
 
 # map - open address in google map
+# map "Taipei 101"
 map() {
   open https://www.google.com.tw/maps/search/$1
 }
