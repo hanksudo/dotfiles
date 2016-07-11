@@ -107,3 +107,13 @@ fshow() {
     done < <(sed '1d;s/^[^a-z0-9]*//;/^$/d' <<< "$out" | awk '{print $1}')
   done
 }
+
+# mp3 - download mp3 from Youtube
+mp3() {
+  youtube-dl -x --audio-format mp3 $1
+}
+
+# map - open address in google map
+map() {
+  open https://www.google.com.tw/maps/search/$1
+}
