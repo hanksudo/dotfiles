@@ -85,17 +85,6 @@ source ~/.profile
 # show path
 alias path='echo ${PATH}'
 
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-  alias ls="ls --color"
-else # OS X `ls`
-  if gls > /dev/null 2>&1; then
-    alias ls='gls -F --color=always'
-  else
-    alias ls='ls -G'
-  fi
-fi
-
 alias ll='ls -l'
 alias la='ls -A'
 alias lc='ls -CF'
