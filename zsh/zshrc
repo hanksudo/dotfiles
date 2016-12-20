@@ -138,7 +138,7 @@ eval $(thefuck --alias)
 alias d="docker"
 alias dip="docker-machine ip $DOCKER_VM"
 alias dcleanimages="docker images | grep '<none>' | awk '{print $3}' | xargs docker rmi -f"
-alias dcleancontainers="docker ps -a -q -f 'status=exited*' | xargs docker rm"
+alias dcleancontainers="docker ps -a -q -f 'status=exited' | xargs docker rm"
 alias dclean="dcleancontainers && dcleanimages"
 alias dcleaner="docker run -v /var/run/docker.sock:/var/run/docker.sock:rw -v /var/lib/docker:/var/lib/docker:rw meltwater/docker-cleanup:latest"
 
