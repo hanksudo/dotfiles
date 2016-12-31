@@ -1,43 +1,12 @@
-DOTFILES_ROOT=`pwd`
-
-# get a string escaping / & for later sed substitution
-# usage:  var=$(get prompt message here) || exit 1
-# note: need the exit as the ERROR only terminates the $() sub-shell
-get()
-{
-  local default prompt data
-  default="$1"; shift
-
-  read -p "$* [${default}]: " -r data
-  [ -z "${data}" ] && data="${default}"
-  printf '%s' "${data}" | sed 's/\\/\\\\/g;s,/,\\/,g;s,&,\\\&,g'
-}
+# change shell to zsh
+if [ $SHELL != '/bin/zsh' ]; then
+    echo $SHELL
+    chsh -s /bin/zsh
+fi
 
 # main program
 echo "=> This will install the files to: ${HOME}"
 echo -ne "\r=> "
-
-config="${HOME}/.dotfilesrc"
-name=
-email=
-
-if [ -f "${config}" ]; then
-    . "${config}"
-    echo "=> ${config} exists"
-else
-    echo "=> dotfilesrc not exists ..."
-    echo "=> Enter some data for substitutions"
-    echo -ne "\r=> "
-
-    name=$(get "${name}" Enter full name) || exit 1
-    email=$(get "${email}" Enter email address) || exit 1
-
-    rm -f "${config}"
-    echo '# .dotfilesrc' >> "${config}"
-    echo '' >> "${config}"
-    echo 'email='"'"${email}"'" >> "${config}"
-    echo 'name='"'"${name}"'" >> "${config}"
-fi
 
 # Homebrew - The missing package manager for OS X
 # http://brew.sh/
@@ -51,6 +20,7 @@ else
     brew update
 fi
 echo "\r"
+brew bundle
 
 # CocoaPods is the dependency manager for Objective-C projects
 # http://cocoapods.org/
@@ -61,40 +31,15 @@ if ! type pod > /dev/null; then
 else
     echo "=> cocoapods already exists, if you need update, execute \n $ sudo gem install cocoapods"
     echo -ne "\r=> "
-    # sudo gem install cocoapods
 fi
 echo "\r"
 
-# A command-line fuzzy finder written in Go
-# https://github.com/junegunn/fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-if ! type pod > /dev/null; then
-    echo "=> Installing fzf ..."
-    echo -ne "\r=> "
-    brew install --HEAD fzf
-    # Install shell extensions
-    /usr/local/Cellar/fzf/HEAD/install
-else
-    echo "=> fzf already exists, if you need update, execute \n $ brew reinstall --HEAD fzf\n"
-    echo -ne "\r=> "
-fi
-echo "\r"
-
-gitconfig="${HOME}/.gitconfig"
-
-# if [ ! -f "${gitconfig}" ]; then
-# default to overwrite gitconfig
-echo "=> Configuring gitconfig ..."
-echo -ne "\r=> "
-
-# use sed to substitute som @VAR@ by values saved in ${config}
-sed "s/@NAME@/${name}/g; s/@EMAIL@/${email}/g" git/gitconfig > "${gitconfig}"
-
+echo "=> Copying Git Configurations ..."
+cp git/gitconfig ~/.gitconfig
 cp git/git-global-ignore ~/.git-global-ignore
 cp git/git-global-attributes ~/.git-global-attributes
-# else
-#     echo "=> ${gitconfig} exists"
-# fi
+legit install
+which git-pr && rm `which git-pr` # I don't need this, and it broken my alias `git pull --rebase`
 
 echo "=> Copying PTMono fonts ..."
 cp -fr fonts/PTMono/*ttf ~/Library/Fonts/
@@ -108,102 +53,26 @@ cp -f zsh/zshrc ~/.zshrc
 echo "=> Copying .tmux.conf ..."
 cp -f zsh/tmux.conf ~/.tmux.conf
 
-# change shell to zsh
-if [ $SHELL != '/bin/zsh' ]; then
-    echo $SHELL
-    chsh -s /bin/zsh
-fi
-
 echo "=> Copying .functions ..."
 cp -f zsh/functions ~/.functions
 
-# autojump - a faster way to navigate your filesystem
-# https://github.com/joelthelion/autojump
-echo "=> Installing autojump ..."
-echo -ne "\r=> "
-brew install autojump
-
-# GNU core utilities
-# Use **gls(coreutils)** instead of ls
-echo "=> Installing GNU core utilities ..."
-echo -ne "\r=> "
-brew install coreutils
-
-# ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.
-# https://github.com/petdance/ack2
-echo "=> Installing ack2 ..."
-echo -ne "\r=> "
-brew install ack
-
-# git-extras
-https://github.com/visionmedia/git-extras
-echo "=> Installing git-extras ..."
-echo -ne "\r=> "
-brew install git-extras
-rm `which git-pr` # I don't need this, and it broken my alias `git pull --rebase`
-
-# zsh-completions
-# https://github.com/zsh-users/zsh-completions
-echo "=> Installing zsh-completions ..."
-echo -ne "\r=> "
-brew install zsh-completions
-
-# Ruby environment Manager
-if ! type rvm > /dev/null; then
-    echo "=> Installing rvm ..."
-    echo -ne "\r=> "
-    curl -L https://get.rvm.io | bash -s stable --ignore-dotfiles
-else
-    echo "=> rvm already installed"
-fi
-
-# zsh plugin - zsh syntax highlight
+# zsh plugin
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]
 then
     echo "=> Installing zsh-syntax-highlighting ..."
     echo -ne "\r=> "
-    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 fi
 
-# tmux - terminal multiplexer
-echo "=> Installing tmux ... "
-echo -ne "\r=> "
-brew install tmux
-
-# install ccat - Colorizing `cat` (https://github.com/jingweno/ccat)
-echo "=> Installing ccat ... "
-echo -ne "\r=> "
-brew install ccat
+if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]
+then
+    echo "=> Installing zsh-autosuggestions ..."
+    echo -ne "\r=> "
+    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+fi
 
 # install python libraries
 echo "=> Installing python libs... "
 echo -ne "\r=> "
 pip install --upgrade pip setuptools
-pip install -r ${DOTFILES_ROOT}/requirements.txt
-
-# use newest openssl
-echo "=> Installing openssl..."
-echo -ne "\r=> "
-brew install openssl
-brew link --force openssl
-
-# use newest curl with openssl
-echo "=> Installing curl..."
-echo -ne "\r=> "
-brew install curl --with-openssl
-brew link --force curl
-
-# scmpuff makes working with git from the command line quicker by substituting numeric shortcuts for filenames.
-# https://mroth.github.io/scmpuff/
-echo "=> Installing scmpuff..."
-echo -ne "\r=> "
-brew install scmpuff
-
-# Legit is a complementary command-line interface for Git, optimized for workflow simplicity.
-# http://www.git-legit.org/
-echo "=> Installing legit..."
-echo -ne "\r=> "
-brew install legit
-legit install
-
-echo "=> Done"
+pip install -r `pwd`/requirements.txt

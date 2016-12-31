@@ -36,7 +36,6 @@ Sometimes work not well, set Terminal Preferences by yourself:
 - [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
 - [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
 - Use [PTMono Fonts](http://www.paratype.com/public/)
-- RVM ( [Ruby enVironment Manager](https://github.com/wayneeseguin/rvm) )
 - [n - Node version management](https://github.com/tj/n)
 - [HTTPie: a CLI, cURL-like tool for humans](https://github.com/jakubroztocil/httpie)
 - [ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.](https://github.com/petdance/ack2)
@@ -47,7 +46,7 @@ Sometimes work not well, set Terminal Preferences by yourself:
 
 - Git alias inside **git/gitconfig**
 - [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
-- Use **gls(coreutils)** instead of ls. ( `$ brew install coreutils` )
+- Use **gls(coreutils)** instead of ls.
 - **lsd** - list only directories
 - **hosts** - Quick edit /etc/hosts
 - **sshc** - Quick edit ~/.ssh/config

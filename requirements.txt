@@ -1,16 +1,14 @@
 coverage
 autopep8
 flake8
-virtualenv
+virtualenvwrapper
 
 httpie
 Pygments
 mkdocs
 
-Twisted
+arrow
 python-dateutil
-pytz
-celery
 BeautifulSoup
 
 thefuck

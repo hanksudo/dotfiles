@@ -1,7 +1,7 @@
 if [ ! -d ~/.oh-my-zsh ]
 then
     echo "=> Installing oh-my-zsh ..."
-    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
 if [ -d "$HOME/.dotfiles" ]; then
@@ -22,4 +22,3 @@ curl -L https://raw.github.com/hanksudo/vimrc/master/install.sh | sh
 echo "\r"
 
 $HOME/.dotfiles/script/bootstrap
-

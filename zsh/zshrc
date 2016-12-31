@@ -46,13 +46,13 @@ DOCKER_VM='default'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws brew nmap npm pip gem python sublime zsh-syntax-highlighting vagrant docker docker-compose httpie jump)
+plugins=(aws brew nmap npm pip gem python sublime zsh-syntax-highlighting vagrant docker docker-compose httpie jump zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
-export PATH=~/bin:$PATH:/usr/local/share/npm/bin:~/.rvm/bin
+export PATH=~/bin:$PATH
 
 # Added Go paths
 if type go > /dev/null; then
@@ -125,7 +125,6 @@ alias -s csv=open
 
 # shorten
 alias v=vagrant
-alias bb=buildbot
 
 # alias clean_pyc="find . -name \*.pyc -delete"
 alias grep="grep -i --color"
@@ -157,3 +156,6 @@ fortune
 # https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+# scmpuff
+eval "$(scmpuff init -s)"

@@ -1,7 +1,14 @@
 # .gitconfig
 [user]
-    name = @NAME@
-    email = @EMAIL@
+    name  = hanksudo
+    email = drapho@gmail.com
+    signingkey = 7ACBFEC7
+
+[core]
+    excludesfile = ~/.git-global-ignore
+    attributesfile = ~/.git-global-attributes
+    editor = vim
+    pager = diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
     cis = commit --signoff
@@ -9,7 +16,6 @@
     all = commit -am
     cm = commit -m
     co = checkout
-    di = diff
     dic = diff --cached
     ec = config -e
     ecg = config -e --global
@@ -112,9 +118,8 @@
     whitespace = strip
 
 [diff]
-    color = auto
-    renames = copy
-	tool = opendiff
+    tool = opendiff
+    compactionHeuristic = true
 
 [color]
     branch = auto
@@ -122,6 +127,7 @@
     grep = auto
     interactive = auto
     status = auto
+    ui = auto
 
 # Colours:  black, red, green, yellow, blue, magenta, cyan and white
 # Attributes: bold, dim, ul, blink and reverse
@@ -162,25 +168,27 @@
     unmerged = bold cyan
 
 [pager]
-    color = true
+    diff  = diff-so-fancy | less --tabs=4 -RFX
 
 [status]
     color = auto
 
-[core]
-    excludesfile = ~/.git-global-ignore
-    attributesfile = ~/.git-global-attributes
-    editor = vim
-
 [push]
     default = simple
+
 [mergetool]
     keepBackup = false
+
 [merge]
     tool = opendiff
+
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
 [commit]
     gpgsign = true
+
+[help]
+    autocorrect = 1
