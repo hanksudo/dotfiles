@@ -135,7 +135,6 @@ eval $(thefuck --alias)
 
 # Docker shortcuts
 alias d="docker"
-alias dip="docker-machine ip $DOCKER_VM"
 alias dcleanimages="docker images | grep '<none>' | awk '{print $3}' | xargs docker rmi -f"
 alias dcleancontainers="docker ps -a -q -f 'status=exited' | xargs docker rm"
 alias dclean="dcleancontainers && dcleanimages"
@@ -143,11 +142,6 @@ alias dcleaner="docker run -v /var/run/docker.sock:/var/run/docker.sock:rw -v /v
 
 # weather
 alias weather="curl wttr.in"
-
-# startup
-echo "Setting environment variables for machine $VM..."
-eval "$(docker-machine env default)"
-echo "Docker Machine IP: ${GREEN}$(dip)${NC}"
 
 fortune
 
