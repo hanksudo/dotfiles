@@ -51,7 +51,7 @@ plugins=(aws brew nmap npm pip gem python sublime zsh-syntax-highlighting vagran
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=~/bin:$PATH
 
 # Added Go paths
@@ -107,7 +107,7 @@ alias diff='diff -u'
 
 # `cat` with beautiful colors. requires Pygments installed.
 alias c='pygmentize -O style=monokai -f console256 -g'
-alias cat=ccat
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
@@ -153,3 +153,21 @@ fortune
 
 # scmpuff
 eval "$(scmpuff init -s)"
+
+# python
+alias pip=pip2
+alias python=python2
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
+source /usr/local/bin/virtualenvwrapper.sh
+
+# direnv
+# echo "source ${WORK_HOME}/env_name/bin/activate" >> .envrc
+eval "$(direnv hook zsh)"
+show_virtual_env() {
+  if [ -n "$VIRTUAL_ENV" ]; then
+    echo "($(basename $VIRTUAL_ENV))"
+  fi
+}
+
+PS1='$(show_virtual_env)'$PS1

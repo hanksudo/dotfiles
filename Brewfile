@@ -17,6 +17,7 @@ brew 'tree'
 brew 'tmux'
 brew 'terminal-notifier'
 brew 'zsh-completions'
+brew 'direnv'
 
 brew 'curl', args: ['--with-openssl']
 

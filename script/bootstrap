@@ -71,6 +71,7 @@ then
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 
+alias pip=pip2
 # install python libraries
 echo "=> Installing python libs... "
 echo -ne "\r=> "
