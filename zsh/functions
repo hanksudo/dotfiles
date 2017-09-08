@@ -119,3 +119,23 @@ mp3() {
 map() {
   open https://www.google.com.tw/maps/search/$1
 }
+
+
+# Execute bash scripts on entering a directory
+# https://unix.stackexchange.com/a/21364/41464
+cd () { builtin cd "$@" && chpwd; }
+pushd () { builtin pushd "$@" && chpwd; }
+popd () { builtin popd "$@" && chpwd; }
+unset_all_project_settings () {
+  type deactivate > /dev/null && deactivate
+  # do whatever it takes to undo the effect of projectSettings.bash,
+  # e.g. unset variables, remove PATH elements, etc.
+}
+chpwd () {
+  if [ -f ${PWD}/.envrc ]
+  then
+    . ${PWD}/.envrc
+  else
+    unset_all_project_settings
+  fi
+}
