@@ -160,14 +160,3 @@ alias python=python2
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 source /usr/local/bin/virtualenvwrapper.sh
-
-# direnv
-# echo "source ${WORK_HOME}/env_name/bin/activate" >> .envrc
-eval "$(direnv hook zsh)"
-show_virtual_env() {
-  if [ -n "$VIRTUAL_ENV" ]; then
-    echo "($(basename $VIRTUAL_ENV))"
-  fi
-}
-
-PS1='$(show_virtual_env)'$PS1
