@@ -157,6 +157,7 @@ eval "$(scmpuff init -s)"
 # python
 alias pip=pip2
 alias python=python2
+export PYTHONPATH=""
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 source /usr/local/bin/virtualenvwrapper.sh
