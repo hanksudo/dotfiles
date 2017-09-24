@@ -21,6 +21,7 @@ else
 fi
 echo "\r"
 brew bundle
+brew cleanup
 
 # CocoaPods is the dependency manager for Objective-C projects
 # http://cocoapods.org/
