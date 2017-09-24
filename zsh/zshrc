@@ -85,6 +85,8 @@ source ~/.profile
 # show path
 alias path='echo ${PATH}'
 
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
 alias ll='ls -l'
 alias la='ls -A'
 alias lc='ls -CF'
