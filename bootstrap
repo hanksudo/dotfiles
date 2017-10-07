@@ -30,6 +30,9 @@ cp -f zsh/tmux.conf ~/.tmux.conf
 echo "=> Copying .functions ..."
 cp -f zsh/functions ~/.functions
 
+echo "=> Copying .profile ..."
+cp -i zsh/profile ~/.profile
+
 echo "=> Copying Spectacle ..."
 cp -f ~/.dotfiles/conf/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 
