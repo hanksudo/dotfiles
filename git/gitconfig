@@ -101,18 +101,6 @@
    # If you marked a commit for editing, then run:
    amend = commit --amend
 
-   # otherwise, run:
-   cont = rebase --continue
-   branches = !legit branches
-   graft = !legit graft
-   harvest = !legit harvest
-   publish = !legit publish
-   unpublish = !legit unpublish
-   sprout = !legit sprout
-   sync = !legit sync
-   switch = !legit switch
-   resync = !legit resync
-
 
 [apply]
     whitespace = strip

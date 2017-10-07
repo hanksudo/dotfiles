@@ -22,4 +22,5 @@ curl -sL https://raw.github.com/hanksudo/vimrc/master/install.sh | sh
 echo "\r"
 
 $HOME/.dotfiles/brew.sh
+$HOME/.dotfiles/pip.sh
 $HOME/.dotfiles/bootstrap

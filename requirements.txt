@@ -4,11 +4,8 @@ flake8
 pipenv
 virtualenvwrapper
 
-Pygments
 mkdocs
 
 arrow
 python-dateutil
 BeautifulSoup
-
-thefuck

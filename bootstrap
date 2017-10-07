@@ -12,7 +12,7 @@ echo "=> Copying Git Configurations ..."
 cp git/gitconfig ~/.gitconfig
 cp git/git-global-ignore ~/.git-global-ignore
 cp git/git-global-attributes ~/.git-global-attributes
-legit install
+
 which git-pr && rm `which git-pr` # I don't need this, and it broken my alias `git pull --rebase`
 
 echo "=> Copying PTMono fonts ..."
@@ -45,11 +45,13 @@ then
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 
-alias pip=pip2
-# install python libraries
-echo "=> Installing python libs... "
-echo -ne "\r=> "
-pip install -q --upgrade pip setuptools
-pip install -qr `pwd`/requirements.txt
-
+echo
+sw_vers
+echo
+brew --version
+python2 --version
+python3 --version
+ruby --version
+echo "node `node --version`"
+echo
 echo "All done!"
