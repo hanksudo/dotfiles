@@ -64,7 +64,13 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 2
 
 # Set a shorter Delay until key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 25
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Illuminate keyboard backlight in low light
+defaults write com.apple.BezelServices kDim -bool true
+
+# Dim off keyboard backlight after 5 seconds
+defaults write com.apple.BezelServices kDimTime -int 5
 
 #################
 # Accessibility #
