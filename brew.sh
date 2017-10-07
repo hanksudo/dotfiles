@@ -15,5 +15,5 @@ else
     brew upgrade
 fi
 echo "\r"
-brew bundle install
+brew bundle -v
 brew cleanup
