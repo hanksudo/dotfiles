@@ -117,9 +117,14 @@ mp3() {
 # map - open address in google map
 # map "Taipei 101"
 map() {
-  open https://www.google.com.tw/maps/search/$1
+  open "https://www.google.com.tw/maps/search/$1"
 }
 
+# image - search image on google map
+# image "Taipei 101"
+image() {
+  open "https://www.google.com/search?tbm=isch&q=$1"
+}
 
 # Execute bash scripts on entering a directory
 # https://unix.stackexchange.com/a/21364/41464

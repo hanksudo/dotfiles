@@ -37,12 +37,11 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 ## Note
 
 - [homebrew - The missing package manager for OS X](http://brew.sh/)
+- [ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.](https://github.com/petdance/ack2)
 - [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
 - [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
 - Use [PTMono Fonts](http://www.paratype.com/public/)
-- [n - Node version management](https://github.com/tj/n)
 - [HTTPie: a CLI, cURL-like tool for humans](https://github.com/jakubroztocil/httpie)
-- [ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.](https://github.com/petdance/ack2)
 - [thefuck - Magnificent app which corrects your previous console command.](https://github.com/nvbn/thefuck)
 - [A command-line fuzzy finder written in Go](https://github.com/junegunn/fzf)
 
@@ -55,9 +54,6 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 - **hosts** - Quick edit /etc/hosts
 - **sshc** - Quick edit ~/.ssh/config
 - **emptytrash** - Empty the Trash on all mounted volumes and the main HDD
-- **c** - `cat` with beautiful colors. requires Pygments installed.
-![](https://github.com/hanksudo/dotfiles/blob/master/screenshots/c.png)
-
 - **ccat** Colorizing `cat` (https://github.com/jingweno/ccat)
 - **ip** - detect IP by remote server
 - **localip** - local ip
@@ -65,8 +61,10 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 - **ports** - list all listening ports (sudo required)
 - **whois** - Enhanced WHOIS lookups
 - **gz** - get gzipped size
-- **extract** - Extract archives - use: extract <file>
+- **extract** - Extract archives - use: `extract <file>`
 - **mkcd** - Make dir and cd into.
+- **map** - Search on Google Map
+- **image** - Search on Google Image
 - **server** - Start an HTTP server from a directory, optionally specifying the port.
 
 ## Sublime Text 3 Packages
@@ -97,7 +95,6 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 - [SQLExec](https://github.com/jum4/sublime-sqlexec)
 - SublimeLinter
 - SublimeLinter-contrib-eslint
-- [Theme - Spacegray](https://github.com/kkga/spacegray)
 - [TodoReview](https://github.com/jonathandelgado/SublimeTodoReview)
 
 ## .zsh-theme
@@ -106,6 +103,5 @@ Based on [paulmillr](https://github.com/paulmillr/dotfiles)'s .zsh-theme.
 
 ## Command lines for fun
 
-- pom
 - fortune
 - sl

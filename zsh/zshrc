@@ -107,9 +107,6 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 # gnu diff does not have DIFFOPTIONS like FreeBSD so:
 alias diff='diff -u'
 
-# `cat` with beautiful colors. requires Pygments installed.
-alias c='pygmentize -O style=monokai -f console256 -g'
-
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"

@@ -6,6 +6,7 @@ brew "lua"
 brew "ruby"
 brew "python"
 brew "python3"
+brew "node"
 
 # AWS releated
 brew "awscli"
