@@ -34,7 +34,7 @@ cp -f zsh/functions ~/.functions
 echo "=> Copying .profile ..."
 cp -n zsh/profile ~/.profile
 
-echo "=> Copying Spectacle ..."
+echo "=> Copying Spectacle conf ..."
 cp -f ~/.dotfiles/conf/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 
 # zsh plugin
