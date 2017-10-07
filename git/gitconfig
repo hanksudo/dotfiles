@@ -117,9 +117,9 @@
 [apply]
     whitespace = strip
 
-[diff]
-    tool = opendiff
-    compactionHeuristic = true
+[core]
+    # This cache is meant to speed up commands that involve determining untracked files such as git status.
+    untrackedCache = true
 
 [color]
     branch = auto
@@ -140,14 +140,14 @@
     plain = white
 
 [color.diff]
-    #plain = white
-    #meta = white
+    # plain = white
+    # meta = white
     frag = ul bold blue
     #func = white
     old = bold red
     new = bold green
     commit = yellow
-    #whitespace = white
+    # whitespace = white
 
 [color.grep]
     match = bold yellow
@@ -166,6 +166,13 @@
     untracked = bold blue
     nobranch = bold magenta
     unmerged = bold cyan
+
+[commit]
+    gpgsign = true
+
+[diff]
+    tool = opendiff
+    compactionHeuristic = true
 
 [pager]
     diff  = diff-so-fancy | less --tabs=4 -RFX
@@ -187,8 +194,6 @@
 	smudge = git-lfs smudge %f
 	required = true
 
-[commit]
-    gpgsign = true
-
 [help]
+    # Automatically correct and execute mistyped commands
     autocorrect = 1
