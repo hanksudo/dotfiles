@@ -1,4 +1,5 @@
 {
+	"auto_complete": true,
 	"auto_complete_triggers":
 	[
 		{
@@ -29,7 +30,7 @@
 		"*.mp3",
 		"*.bmp"
 	],
-	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Mariana (SL).tmTheme",
 	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -54,19 +55,24 @@
 	[
 		"gray_antialias"
 	],
-	"font_size": 23.0,
+	"font_size": 18.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Markdown",
+		"Python",
+		"SublimeCodeIntel",
 		"Vintage"
 	],
-	"rulers": [80],
-	"word_wrap": true,
-	"wrap_width": 80,
+	"rulers":
+	[
+		80
+	],
 	"soda_classic_tabs": false,
 	"tab_size": 4,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true,
+	"wrap_width": 140
 }
