@@ -38,3 +38,6 @@ python-dateutil
 # http://www.crummy.com/software/BeautifulSoup/
 BeautifulSoup
 
+# Jupyter metapackage. Install all the Jupyter components in one go.
+# http://jupyter.org
+jupyter
