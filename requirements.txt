@@ -1,3 +1,7 @@
+# A Python utility / library to sort Python imports.
+# https://github.com/timothycrosley/isort
+isort
+
 # Code coverage measurement for Python
 # https://coverage.readthedocs.io
 coverage
