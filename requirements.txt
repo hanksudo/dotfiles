@@ -1,9 +1,9 @@
 coverage
 autopep8
 flake8
+pipenv
 virtualenvwrapper
 
-httpie
 Pygments
 mkdocs
 

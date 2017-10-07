@@ -10,13 +10,16 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-open "terminal/hanksudo.terminal"
-sleep 1
-defaults write com.apple.terminal 'Startup Window Settings' -string 'hanksudo'
-defaults write com.apple.terminal 'Default Window Settings' -string 'hanksudo'
+# open "terminal/hanksudo.terminal"
+# sleep 1
+# defaults write com.apple.terminal 'Startup Window Settings' -string 'hanksudo'
+# defaults write com.apple.terminal 'Default Window Settings' -string 'hanksudo'
+
+# Prevent Time Machine from prompting to use new hard drives as backup volume
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine snapshots
-sudo tmutil disablelocal
+# hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 # Set auto-hide dock
 defaults write com.apple.Dock autohide -int 1

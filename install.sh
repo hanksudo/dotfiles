@@ -15,10 +15,11 @@ else
 fi
 echo "\r"
 
-# install vim
+# install vimrc
 # https://github.com/hanksudo/vimrc
 echo "=> installing vimrc ..."
-curl -L https://raw.github.com/hanksudo/vimrc/master/install.sh | sh
+curl -sL https://raw.github.com/hanksudo/vimrc/master/install.sh | sh
 echo "\r"
 
-$HOME/.dotfiles/script/bootstrap
+$HOME/.dotfiles/brew.sh
+$HOME/.dotfiles/bootstrap

@@ -1,31 +1,65 @@
-tap 'homebrew/bundle'
+tap "homebrew/bundle"
+tap "caskroom/cask"
 
-brew 'ack'
-brew 'autojump'
-brew 'ccat'
-brew 'coreutils'
-brew 'checkbashisms'
-brew 'diff-so-fancy'
-brew 'fzf'
-brew 'git'
-brew 'git-extras'
-brew 'legit'
-brew 'openssl'
-brew 'scmpuff'
-brew 'shellcheck'
-brew 'tree'
-brew 'tmux'
-brew 'terminal-notifier'
-brew 'zsh-completions'
-brew 'python3'
+# Programming languages related
+brew "lua"
+brew "ruby"
+brew "python"
+brew "python3"
 
-brew 'curl', args: ['--with-openssl']
+# AWS releated
+brew "awscli"
+brew "s3cmd"
 
-tap 'caskroom/cask'
-cask_args appdir: '/Applications'
-cask 'macdown'
-cask 'skype'
-cask 'the-unarchiver'
-cask 'vlc'
-cask 'virtualbox'
-cask 'vagrant'
+brew "ack"
+brew "autojump"
+brew "asciinema"
+brew "bash"
+brew "gettext"
+brew "curl", args: ["--with-openssl"]
+brew "ccat"
+brew "cocoapods"
+brew "coreutils"
+brew "checkbashisms"
+brew "diff-so-fancy"
+brew "fzf"
+brew "git"
+brew "git-extras"
+brew "httpie"
+brew "imagemagick"
+brew "jq"
+brew "legit"
+brew "nmap"
+brew "openssl"
+brew "pandoc"
+brew "pgbadger"
+brew "scmpuff"
+brew "shellcheck"
+brew "speedtest_cli"
+brew "thefuck"
+brew "tmux"
+brew "tree"
+brew "vim", args: ["--override-system-vi"]
+brew "wget", args: ["--with-iri"]
+brew "yarn", args: ["without-node"]
+brew "youtube-dl"
+brew "zsh-completions"
+
+# Applications
+cask_args appdir: "/Applications"
+cask "alfred"
+cask "firefox"
+cask "gimp"
+cask "google-chrome"
+cask "imageoptim"
+cask "iterm2"
+cask "macdown"
+cask "ngrok"
+cask "osxfuse"
+cask "skype"
+cask "spectacle"
+cask "the-unarchiver"
+cask "vagrant"
+cask "virtualbox"
+cask "vlc"
+cask "caskroom/versions/google-chrome-canary"

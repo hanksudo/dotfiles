@@ -8,33 +8,6 @@ fi
 echo "=> This will install the files to: ${HOME}"
 echo -ne "\r=> "
 
-# Homebrew - The missing package manager for OS X
-# http://brew.sh/
-if ! type brew > /dev/null; then
-    echo "=> Installing homebrew ..."
-    echo -ne "\r=> "
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else
-    echo "=> homebrew exists, updating ..."
-    echo -ne "\r=> "
-    brew update
-fi
-echo "\r"
-brew bundle
-brew cleanup
-
-# CocoaPods is the dependency manager for Objective-C projects
-# http://cocoapods.org/
-if ! type pod > /dev/null; then
-    echo "=> Installing cocoapods ..."
-    echo -ne "\r=> "
-    sudo gem install cocoapods
-else
-    echo "=> cocoapods already exists, if you need update, execute \n $ sudo gem install cocoapods"
-    echo -ne "\r=> "
-fi
-echo "\r"
-
 echo "=> Copying Git Configurations ..."
 cp git/gitconfig ~/.gitconfig
 cp git/git-global-ignore ~/.git-global-ignore
@@ -76,5 +49,7 @@ alias pip=pip2
 # install python libraries
 echo "=> Installing python libs... "
 echo -ne "\r=> "
-pip install --upgrade pip setuptools
-pip install -r `pwd`/requirements.txt
+pip install -q --upgrade pip setuptools
+pip install -qr `pwd`/requirements.txt
+
+echo "All done!"
