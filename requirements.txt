@@ -1,11 +1,36 @@
+# Code coverage measurement for Python
+# https://coverage.readthedocs.io
 coverage
+
+# A tool that automatically formats Python code to conform to the PEP 8 style guide
+# https://github.com/hhatto/autopep8
 autopep8
+
+# the modular source code checker: pep8, pyflakes and co
+# https://gitlab.com/pycqa/flake8
 flake8
+
+# Python Development Workflow for Humans.
+# https://github.com/kennethreitz/pipenv
 pipenv
+
+# Enhancements to virtualenv
+# https://virtualenvwrapper.readthedocs.io/
 virtualenvwrapper
 
+# Project documentation with Markdown.
+# http://www.mkdocs.org
 mkdocs
 
+# Better dates and times for Python
+# https://github.com/crsmithdev/arrow/
 arrow
+
+# Extensions to the standard Python datetime module
+# https://dateutil.readthedocs.io
 python-dateutil
+
+# HTML/XML parser for quick-turnaround applications like screen-scraping.
+# http://www.crummy.com/software/BeautifulSoup/
 BeautifulSoup
+
