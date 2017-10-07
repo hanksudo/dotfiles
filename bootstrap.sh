@@ -1,3 +1,4 @@
+#!/bin/sh
 # change shell to zsh
 if [ $SHELL != '/bin/zsh' ]; then
     echo $SHELL

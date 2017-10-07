@@ -1,3 +1,4 @@
+#!/bin/sh
 if [ ! -d ~/.oh-my-zsh ]
 then
     echo "=> Installing oh-my-zsh ..."
@@ -15,12 +16,6 @@ else
 fi
 echo "\r"
 
-# install vimrc
-# https://github.com/hanksudo/vimrc
-echo "=> installing vimrc ..."
-curl -sL https://raw.github.com/hanksudo/vimrc/master/install.sh | sh
-echo "\r"
-
 $HOME/.dotfiles/brew.sh
 $HOME/.dotfiles/pip.sh
-$HOME/.dotfiles/bootstrap
+$HOME/.dotfiles/bootstrap.sh
