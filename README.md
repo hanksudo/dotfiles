@@ -19,14 +19,14 @@
 
 ## Install
 
-    ```
-    sudo softwareupdate -i -a
-    xcode-select --install
-    ```
+```bash
+sudo softwareupdate -i -a
+xcode-select --install
+```
 
-    ```
-    curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
-    ```
+```bash
+curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
+```
 
 ## OSX and Terminal Settings
 
