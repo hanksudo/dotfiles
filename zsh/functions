@@ -126,6 +126,11 @@ image() {
   open "https://www.google.com/search?tbm=isch&q=$1"
 }
 
+# weather - show weather
+weather() {
+  curl "wttr.in$1"
+}
+
 # Execute bash scripts on entering a directory
 # https://unix.stackexchange.com/a/21364/41464
 cd () { builtin cd "$@" && chpwd; }

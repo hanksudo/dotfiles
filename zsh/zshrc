@@ -139,11 +139,6 @@ alias dcleancontainers="docker ps -a -q -f 'status=exited' | xargs docker rm"
 alias dclean="dcleancontainers && dcleanimages"
 alias dcleaner="docker run -v /var/run/docker.sock:/var/run/docker.sock:rw -v /var/lib/docker:/var/lib/docker:rw meltwater/docker-cleanup:latest"
 
-# weather
-alias weather="curl wttr.in"
-
-fortune
-
 
 # A command-line fuzzy finder written in Go
 # https://github.com/junegunn/fzf
@@ -160,3 +155,7 @@ export PYTHONPATH=""
 export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 source /usr/local/bin/virtualenvwrapper.sh
+
+
+weather /東京\?0
+weather /台北\?0

@@ -16,6 +16,7 @@
 ## Screenshot
 
 ![](https://github.com/hanksudo/dotfiles/blob/master/screenshots/terminal.png)
+![](https://github.com/hanksudo/dotfiles/blob/master/screenshots/weather.png)
 
 ## Install
 
@@ -65,6 +66,7 @@ curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 - **mkcd** - Make dir and cd into.
 - **map** - Search on Google Map
 - **image** - Search on Google Image
+- **weather** - Show weather
 - **server** - Start an HTTP server from a directory, optionally specifying the port.
 
 ## Sublime Text 3 Packages
