@@ -1,9 +1,4 @@
 # .gitconfig
-[user]
-    name  = hanksudo
-    email = drapho@gmail.com
-    signingkey = 7ACBFEC7
-
 [core]
     excludesfile = ~/.git-global-ignore
     attributesfile = ~/.git-global-attributes
