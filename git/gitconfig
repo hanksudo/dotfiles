@@ -1,4 +1,8 @@
 # .gitconfig
+[user]
+    name = 
+    email = 
+    signingkey = 
 [core]
     excludesfile = ~/.git-global-ignore
     attributesfile = ~/.git-global-attributes
