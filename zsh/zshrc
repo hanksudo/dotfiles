@@ -157,5 +157,6 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 source /usr/local/bin/virtualenvwrapper.sh
 
 
+weather /大阪\?0
 weather /東京\?0
 weather /台北\?0
