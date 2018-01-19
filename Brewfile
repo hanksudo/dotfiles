@@ -7,6 +7,7 @@ brew "ruby"
 brew "python"
 brew "python3"
 brew "node"
+brew "go"
 
 # AWS releated
 brew "awscli"
@@ -49,6 +50,7 @@ brew "zsh-completions"
 # Applications
 cask_args appdir: "/Applications"
 cask "alfred"
+cask "chefdk"
 cask "dropbox"
 cask "docker-toolbox"
 cask "evernote"

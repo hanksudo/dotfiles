@@ -60,5 +60,6 @@ python2 --version
 python3 --version
 ruby --version
 echo "node `node --version`"
+go version
 echo
 echo "All done!"
