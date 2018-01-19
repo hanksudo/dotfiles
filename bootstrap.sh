@@ -9,6 +9,9 @@ fi
 echo "=> This will install the files to: ${HOME}"
 echo -ne "\r=> "
 
+# git config --global user.signingkey GPG_KEY
+# git config --global user.email EMAIL
+# git config --global user.name NAME
 echo "=> Copying Git Configurations ..."
 cp git/gitconfig ~/.gitconfig
 cp git/git-global-ignore ~/.git-global-ignore
