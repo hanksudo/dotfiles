@@ -18,4 +18,5 @@ echo "\r"
 
 $HOME/.dotfiles/brew.sh
 $HOME/.dotfiles/pip.sh
+$HOME/.dotfiles/vscode-extensions.sh
 $HOME/.dotfiles/bootstrap.sh
