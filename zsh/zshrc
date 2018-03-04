@@ -62,7 +62,7 @@ if type go > /dev/null; then
 fi
 
 # Added Python@2 path
-export PATH="/usr/local/opt/python@2/bin:$PATH
+export PATH=/usr/local/opt/python@2/bin:$PATH
 
 # zmv '(*).html $1.haml'
 # http://zshwiki.org/home/builtin/functions/zmv
