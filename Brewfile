@@ -4,7 +4,7 @@ tap "caskroom/cask"
 # Programming languages related
 brew "lua"
 brew "ruby"
-brew "python"
+brew "python@2"
 brew "python3"
 brew "node"
 brew "go"

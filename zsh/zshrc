@@ -61,6 +61,9 @@ if type go > /dev/null; then
     export PATH=$PATH:$GOPATH/bin
 fi
 
+# Added Python@2 path
+export PATH="/usr/local/opt/python@2/bin:$PATH
+
 # zmv '(*).html $1.haml'
 # http://zshwiki.org/home/builtin/functions/zmv
 autoload -U zmv
@@ -148,10 +151,5 @@ alias dcleaner="docker run -v /var/run/docker.sock:/var/run/docker.sock:rw -v /v
 # scmpuff
 eval "$(scmpuff init -s)"
 
-# python
-alias pip=pip2
-alias python=python2
-
-weather /大阪\?0
 weather /東京\?0
 weather /台北\?0
