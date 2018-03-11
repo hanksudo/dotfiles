@@ -64,6 +64,10 @@ fi
 # Added Python@2 path
 export PATH=/usr/local/opt/python@2/bin:$PATH
 
+# Use python 2 as default
+alias python=python2
+alias pip=pip2
+
 # zmv '(*).html $1.haml'
 # http://zshwiki.org/home/builtin/functions/zmv
 autoload -U zmv
