@@ -15,8 +15,8 @@
 
 ## Screenshot
 
-![](https://github.com/hanksudo/dotfiles/blob/master/screenshots/terminal.png)
-![](https://github.com/hanksudo/dotfiles/blob/master/screenshots/weather.png)
+![screenshot1](./screenshots/terminal.png)
+![screenshot2](./screenshots/weather.png)
 
 ## Install
 
@@ -27,6 +27,14 @@ xcode-select --install
 
 ```bash
 curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
+```
+
+Set Git user info if you use gitconfig
+
+```bash
+git config --global user.signingkey XXXXXXX
+git config --global user.email your-email-address
+git config --global user.name "You Name"
 ```
 
 ## OSX and Terminal Settings
