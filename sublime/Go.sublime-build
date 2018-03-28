@@ -1,7 +1,0 @@
-{
-    "cmd": ["/usr/local/bin/go", "run", "$file"],
-    "selector": "source.go",
-    "env": {
-        "GOPATH": "$HOME/goProjects"
-    }
-}
