@@ -56,7 +56,7 @@ export PATH=~/bin:$PATH
 
 # Added Go paths
 if type go > /dev/null; then
-    export GOPATH=$HOME/goProjects
+    export GOPATH=`go env GOPATH`  # default is $HOME/go
     export GOROOT=`go env GOROOT`
     export PATH=$PATH:$GOPATH/bin
 fi
