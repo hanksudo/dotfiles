@@ -75,6 +75,7 @@ git config --global user.name "You Name"
 - **extract** - Extract archives - use: `extract <file>`
 - **mkcd** - Make dir and cd into.
 - **map** - Search on Google Map
+- **titler** - Auto copy web title and url as specific format
 - **pip-purge** - Purge all Python packges
 - **pip3-purge** - Purge all Python3 packges
 - **weather** - Show weather
