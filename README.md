@@ -59,6 +59,7 @@ git config --global user.name "You Name"
 - Git alias inside **git/gitconfig**
 - [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
 - Use **gls(coreutils)** instead of ls.
+- **doctoc** - Generates table of contents for markdown files inside local git repository
 - **lsd** - list only directories
 - **hosts** - Quick edit /etc/hosts
 - **sshc** - Quick edit ~/.ssh/config
@@ -67,15 +68,18 @@ git config --global user.name "You Name"
 - **ip** - detect IP by remote server
 - **localip** - local ip
 - **ips** - IPv4 IPs
+- **image** - Search on Google Image
 - **ports** - list all listening ports (sudo required)
 - **whois** - Enhanced WHOIS lookups
 - **gz** - get gzipped size
 - **extract** - Extract archives - use: `extract <file>`
 - **mkcd** - Make dir and cd into.
 - **map** - Search on Google Map
-- **image** - Search on Google Image
+- **pip-purge** - Purge all Python packges
+- **pip3-purge** - Purge all Python3 packges
 - **weather** - Show weather
 - **server** - Start an HTTP server from a directory, optionally specifying the port.
+- **serve** - Serve static files
 
 ## Sublime Text 3 Packages
 
@@ -111,6 +115,12 @@ git config --global user.name "You Name"
 
 ```bash
 code --list-extensions > vscode.extensions
+```
+
+## Export NPM packages list
+
+```bash
+npm ls -g --depth=0
 ```
 
 ## Command lines for fun

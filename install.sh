@@ -19,4 +19,5 @@ echo "\r"
 $HOME/.dotfiles/brew.sh
 $HOME/.dotfiles/pip.sh
 $HOME/.dotfiles/vscode-extensions.sh
+xargs npm i -g < npmfile
 $HOME/.dotfiles/bootstrap.sh
