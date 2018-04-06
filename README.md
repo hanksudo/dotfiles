@@ -107,11 +107,16 @@ git config --global user.name "You Name"
 - SublimeLinter-contrib-eslint
 - [TodoReview](https://github.com/jonathandelgado/SublimeTodoReview)
 
-## .zsh-theme
+## Export VSCode extensions
 
-Based on [paulmillr](https://github.com/paulmillr/dotfiles)'s .zsh-theme.
+```bash
+code --list-extensions > vscode.extensions
+```
 
 ## Command lines for fun
 
-- fortune
-- sl
+```bash
+fortune
+sl
+cowsay お元気ですか？
+```
