@@ -7,6 +7,7 @@ if ! type brew > /dev/null; then
     echo -ne "\r=> "
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew analytics off
+    HOMEBREW_NO_INSECURE_REDIRECT=1
     ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 else
     echo "=> homebrew exists, updating ..."
