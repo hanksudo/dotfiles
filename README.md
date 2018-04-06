@@ -120,3 +120,8 @@ fortune
 sl
 cowsay お元気ですか？
 ```
+
+## References
+
+- [GitHub does dotfiles - dotfiles.github.io](http://dotfiles.github.io/)
+- [GitHub - drduh/macOS-Security-and-Privacy-Guide: A practical guide to securing macOS.](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
