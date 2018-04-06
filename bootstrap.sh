@@ -1,13 +1,13 @@
 #!/bin/sh
 # change shell to zsh
-if [ $SHELL != '/bin/zsh' ]; then
-    echo $SHELL
+if [ "$SHELL" != '/bin/zsh' ]; then
+    echo "$SHELL"
     chsh -s /bin/zsh
 fi
 
 # main program
 echo "=> This will install the files to: ${HOME}"
-echo -ne "\r=> "
+echo "=>"
 
 # git config --global user.signingkey GPG_KEY
 # git config --global user.email EMAIL
@@ -17,7 +17,7 @@ cp git/gitconfig ~/.gitconfig
 cp git/git-global-ignore ~/.git-global-ignore
 cp git/git-global-attributes ~/.git-global-attributes
 
-which git-pr && rm `which git-pr` # I don't need this, and it broken my alias `git pull --rebase`
+which git-pr && rm "$(which git-pr)"  # Remove git-pr, which broken my alias `git pull --rebase`
 
 echo "=> Copying PTMono fonts ..."
 cp -fr fonts/PTMono/*ttf ~/Library/Fonts/
@@ -44,14 +44,14 @@ cp -f ~/.dotfiles/conf/Spectacle/Shortcuts.json ~/Library/Application\ Support/S
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]
 then
     echo "=> Installing zsh-syntax-highlighting ..."
-    echo -ne "\r=> "
+    echo "=> "
     git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 fi
 
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]
 then
     echo "=> Installing zsh-autosuggestions ..."
-    echo -ne "\r=> "
+    echo "=> "
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 
@@ -62,7 +62,7 @@ brew --version
 python2 --version
 python3 --version
 ruby --version
-echo "node `node --version`"
+echo "node $(node --version)"
 go version
 echo
 echo "All done!"

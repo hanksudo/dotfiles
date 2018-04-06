@@ -7,17 +7,17 @@ fi
 
 if [ -d "$HOME/.dotfiles" ]; then
     echo "=> dotfiles is already installed in $HOME/.dotfiles, trying to update"
-    echo -ne "\r=> "
-    cd $HOME/.dotfiles && git pull
+    echo "=> "
+    cd "$HOME"/.dotfiles && git pull
 else
     echo "=> clone dotfiles from Github..."
-    git clone https://github.com/hanksudo/dotfiles.git $HOME/.dotfiles
-    cd $HOME/.dotfiles
+    git clone https://github.com/hanksudo/dotfiles.git "$HOME"/.dotfiles
+    cd "$HOME"/.dotfiles || exit
 fi
-echo "\r"
+echo ""
 
-$HOME/.dotfiles/brew.sh
-$HOME/.dotfiles/pip.sh
-$HOME/.dotfiles/vscode-extensions.sh
+"$HOME"/.dotfiles/brew.sh
+"$HOME"/.dotfiles/pip.sh
+"$HOME"/.dotfiles/vscode-extensions.sh
 xargs npm i -g < npmfile
-$HOME/.dotfiles/bootstrap.sh
+"$HOME"/.dotfiles/bootstrap.sh

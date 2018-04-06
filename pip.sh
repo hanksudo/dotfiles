@@ -2,6 +2,6 @@
 alias pip=pip2
 # install python packages
 echo "=> Installing python packages... "
-echo -ne "\r=> "
+echo "=> "
 pip install -q --upgrade pip setuptools
-pip install -qr "`pwd`/requirements.txt"
+pip install -qr "$(pwd)/requirements.txt"
