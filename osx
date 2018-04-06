@@ -125,4 +125,27 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 # Xcode - show line number
 defaults write com.apple.dt.Xcode DVTTextShowLineNumbers -bool true
 
+############
+# Security #
+############
+# https://github.com/drduh/macOS-Security-and-Privacy-Guide
+
+# Enable the firewall
+/usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+
+# Stealth mode:
+/usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
+
+# Disable remote apple events
+sudo systemsetup -setremoteappleevents off
+
+# Disable remote login
+sudo systemsetup -setremotelogin off
+
+# Disable wake-on modem
+sudo systemsetup -setwakeonmodem off
+
+# Disable wake-on LAN
+sudo systemsetup -setwakeonnetworkaccess off
+
 killall SystemUIServer
