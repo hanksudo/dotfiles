@@ -146,6 +146,8 @@ alias dcleancontainers="docker ps -a -q -f 'status=exited' | xargs docker rm"
 alias dclean="dcleancontainers && dcleanimages"
 alias dcleaner="docker run -v /var/run/docker.sock:/var/run/docker.sock:rw -v /var/lib/docker:/var/lib/docker:rw meltwater/docker-cleanup:latest"
 
+# Jupyter shortcut notebook
+alias nbx="jupyter nbconvert --execute --to notebook --inplace $1"
 
 # A command-line fuzzy finder written in Go
 # https://github.com/junegunn/fzf

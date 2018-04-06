@@ -13,4 +13,14 @@ export HOMEBREW_GITHUB_API_TOKEN=
 # auto completion for Python
 export PYTHONSTARTUP=~/.pythonrc
 
+# Android SDK home
+~/Library/Android/sdk
+
+# PostgreSQL bin
+export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
+
+# Git global config
+# git config --global user.signingkey XXXX
+# git config --global user.email XXXX
+# git config --global user.name "XXXX"
 
