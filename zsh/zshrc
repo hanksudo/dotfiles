@@ -149,6 +149,10 @@ alias dcleaner="docker run -v /var/run/docker.sock:/var/run/docker.sock:rw -v /v
 # Jupyter shortcut notebook
 alias nbx="jupyter nbconvert --execute --to notebook --inplace $1"
 
+# purge all Python packages
+alias pip-purge="pip uninstall -y -r <(pip freeze)"
+alias pip3-purge="pip3 uninstall -y -r <(pip3 freeze)"
+
 # A command-line fuzzy finder written in Go
 # https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
