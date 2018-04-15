@@ -3,7 +3,7 @@
 isort
 
 # Code coverage measurement for Python
-# https://coverage.readthedocs.io
+# https://bitbucket.org/ned/coveragepy
 coverage
 
 # A tool that automatically formats Python code to conform to the PEP 8 style guide
@@ -15,7 +15,7 @@ autopep8
 flake8
 
 # Python Development Workflow for Humans.
-# https://github.com/kennethreitz/pipenv
+# https://github.com/pypa/pipenv
 pipenv
 
 # Enhancements to virtualenv
@@ -41,3 +41,8 @@ BeautifulSoup
 # Jupyter metapackage. Install all the Jupyter components in one go.
 # http://jupyter.org
 jupyter
+
+# Powerful data structures for data analysis, time series,and statistics
+# http://pandas.pydata.org
+pandas
+
