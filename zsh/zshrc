@@ -139,12 +139,40 @@ alias grep="grep -i --color"
 # https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
 
-# Docker shortcuts
+# ---  Docker shortcuts
 alias d="docker"
-alias dcleanimages="docker images | grep '<none>' | awk '{print $3}' | xargs docker rmi -f"
-alias dcleancontainers="docker ps -a -q -f 'status=exited' | xargs docker rm"
-alias dclean="dcleancontainers && dcleanimages"
-alias dcleaner="docker run -v /var/run/docker.sock:/var/run/docker.sock:rw -v /var/lib/docker:/var/lib/docker:rw meltwater/docker-cleanup:latest"
+
+# Get container IP
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+
+# Show all alias related docker
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+# Stop all containers
+dstop() { docker stop $(docker ps -a -q); }
+
+# Remove all containers
+drm() { docker rm $(docker ps -a -q); }
+
+# Remove all images
+dri() { docker rmi $(docker images -q); }
+
+# Stop and Remove all containers
+alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+
+# Run deamonized container, e.g., $ dkd base /bin/echo hello
+alias dkd="docker run -d -P"
+
+# Run interactive container, e.g., $ dki base /bin/bash
+alias dki="docker run -it -P"
+
+# Dockerfile build, e.g., $ dbu hanksudo/test
+dbu() { docker build -t="$1" .; }
+
+# Bash into running container
+dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+
+
 
 # Jupyter shortcut notebook
 alias nbx="jupyter nbconvert --execute --to notebook --inplace $1"
