@@ -62,12 +62,12 @@ if type go > /dev/null; then
     export PATH=$PATH:$GOPATH/bin
 fi
 
-# Added Python@2 path
-export PATH=/usr/local/opt/python@2/bin:$PATH
+# Added Python@3 path
+export PATH=/usr/local/opt/python@3/bin:$PATH
 
-# Use python 2 as default
-alias python=python2
-alias pip=pip2
+# Use python 3 as default
+alias python=python3
+alias pip=pip3
 
 # zmv '(*).html $1.haml'
 # http://zshwiki.org/home/builtin/functions/zmv
@@ -179,7 +179,7 @@ dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 alias nbx="jupyter nbconvert --execute --to notebook --inplace $1"
 
 # purge all Python packages
-alias pip-purge="pip uninstall -y -r <(pip freeze)"
+alias pip2-purge="pip2 uninstall -y -r <(pip2 freeze)"
 alias pip3-purge="pip3 uninstall -y -r <(pip3 freeze)"
 
 # A command-line fuzzy finder written in Go

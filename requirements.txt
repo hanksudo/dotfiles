@@ -14,14 +14,6 @@ autopep8
 # https://gitlab.com/pycqa/flake8
 flake8
 
-# Python Development Workflow for Humans.
-# https://github.com/pypa/pipenv
-pipenv
-
-# Enhancements to virtualenv
-# https://virtualenvwrapper.readthedocs.io/
-virtualenvwrapper
-
 # Project documentation with Markdown.
 # http://www.mkdocs.org
 mkdocs
@@ -36,7 +28,7 @@ python-dateutil
 
 # HTML/XML parser for quick-turnaround applications like screen-scraping.
 # http://www.crummy.com/software/BeautifulSoup/
-BeautifulSoup
+beautifulsoup4
 
 # Jupyter metapackage. Install all the Jupyter components in one go.
 # http://jupyter.org
@@ -45,4 +37,3 @@ jupyter
 # Powerful data structures for data analysis, time series,and statistics
 # http://pandas.pydata.org
 pandas
-
