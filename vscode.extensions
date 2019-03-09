@@ -7,7 +7,6 @@ DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 deerawan.vscode-dash
 donjayamanne.githistory
-donjayamanne.jupyter
 EditorConfig.EditorConfig
 esbenp.prettier-vscode
 formulahendry.code-runner
@@ -18,7 +17,6 @@ marcostazi.VS-code-vagrantfile
 mohsen1.prettify-json
 ms-python.python
 ms-vscode.Go
-msjsdiag.debugger-for-chrome
 neuron.neuron-IPE
 octref.vetur
 PeterJausovec.vscode-docker

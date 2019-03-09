@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # code --list-extensions
-<vscode.extensions xargs -I % code --install-extension --force %
+cat vscode.extensions | xargs -L 1 code --install-extension
