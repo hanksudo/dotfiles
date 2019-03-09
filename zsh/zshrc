@@ -87,9 +87,6 @@ export JOBS=max
 # extra functions
 source ~/.functions
 
-# extra profile
-source ~/.profile
-
 # show path
 alias path='echo ${PATH}'
 

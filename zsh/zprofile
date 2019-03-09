@@ -14,10 +14,13 @@ export HOMEBREW_GITHUB_API_TOKEN=
 export PYTHONSTARTUP=~/.pythonrc
 
 # Android SDK home
-~/Library/Android/sdk
+export ANDROID_HOME=~/Library/Android/sdk
 
 # PostgreSQL bin
 export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
+
+# Rust cargo
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Git global config
 # git config --global user.signingkey XXXX

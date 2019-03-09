@@ -34,8 +34,8 @@ cp -f zsh/tmux.conf ~/.tmux.conf
 echo "=> Copying .functions ..."
 cp -f zsh/functions ~/.functions
 
-echo "=> Copying .profile ..."
-cp -n zsh/profile ~/.profile
+echo "=> Copying .zprofile ... (if not exists)"
+cp -n zsh/zprofile ~/.zprofile
 
 echo "=> Copying Spectacle conf ..."
 cp -f ~/.dotfiles/conf/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
@@ -64,5 +64,6 @@ python3 --version
 ruby --version
 echo "node $(node --version)"
 go version
+rustc -V
 echo
 echo "All done!"
