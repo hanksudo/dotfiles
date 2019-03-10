@@ -17,5 +17,4 @@ else
 fi
 echo ""
 brew bundle -v
-brew link --force curl
 brew cleanup
