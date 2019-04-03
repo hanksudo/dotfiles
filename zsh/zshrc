@@ -139,6 +139,7 @@ eval $(thefuck --alias)
 
 # ---  Docker shortcuts
 alias d="docker"
+alias mk="minikube"
 
 # Get container IP
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
