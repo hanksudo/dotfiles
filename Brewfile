@@ -55,6 +55,7 @@ brew "zsh-completions"
 # Applications
 cask_args appdir: "/Applications"
 cask "alfred"
+cask "brave-browser"
 cask "dropbox"
 cask "evernote"
 cask "fastlane"
