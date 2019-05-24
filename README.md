@@ -136,3 +136,4 @@ cowsay お元気ですか？
 
 - [GitHub does dotfiles - dotfiles.github.io](http://dotfiles.github.io/)
 - [GitHub - drduh/macOS-Security-and-Privacy-Guide: A practical guide to securing macOS.](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
+- [GitHub - jlevy/the-art-of-command-line: Master the command line, in one page](https://github.com/jlevy/the-art-of-command-line)
