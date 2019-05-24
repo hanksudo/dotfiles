@@ -54,7 +54,7 @@ mkcd()
 # Start an HTTP server from a directory, optionally specifying the port
 server() {
     local port="${1:-8000}"
-    (sleep 1.5 && open "http://localhost:${port}/") && python -m SimpleHTTPServer "$port"
+    (sleep 1.5 && open "http://localhost:${port}/") && python -m http.server "$port"
 }
 
 # list all litening port
