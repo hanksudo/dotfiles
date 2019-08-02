@@ -190,3 +190,5 @@ eval "$(scmpuff init -s)"
 
 weather /東京\?0
 weather /台北\?0
+
+. ~/.zprofile
