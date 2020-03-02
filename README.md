@@ -54,6 +54,13 @@ git config --global user.name "You Name"
 - [thefuck - Magnificent app which corrects your previous console command.](https://github.com/nvbn/thefuck)
 - [A command-line fuzzy finder written in Go](https://github.com/junegunn/fzf)
 
+## Applications
+
+- [IINA - The modern media player for macOS](https://iina.io/)
+- [Notable - The Markdown-based note-taking app that doesn't suck](https://notable.md/)
+- [Rectangle: Move and resize windows on macOS with keyboard shortcuts and snap areas](https://github.com/rxhanson/Rectangle)
+
+
 ## Extra alias & functions
 
 - Git alias inside **git/gitconfig**
