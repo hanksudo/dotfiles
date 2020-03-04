@@ -22,6 +22,9 @@ export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 # Rust cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 
+# Ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH
+
 # Git global config
 # git config --global user.signingkey XXXX
 # git config --global user.email XXXX
