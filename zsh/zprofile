@@ -25,6 +25,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Ruby
 export PATH="/usr/local/opt/ruby/bin:$PATH
 
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH
+
 # Git global config
 # git config --global user.signingkey XXXX
 # git config --global user.email XXXX

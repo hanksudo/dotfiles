@@ -46,7 +46,7 @@ DOCKER_VM='default'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws brew nmap npm pip gem python sublime zsh-syntax-highlighting vagrant docker docker-compose httpie jump zsh-autosuggestions)
+plugins=(aws brew nmap npm pip ruby gem rbenv python sublime zsh-syntax-highlighting vagrant docker docker-compose httpie jump zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -192,3 +192,6 @@ weather /東京\?0
 weather /台北\?0
 
 . ~/.zprofile
+
+# rbevn
+eval "$(rbenv init -)"
