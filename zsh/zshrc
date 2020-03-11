@@ -138,8 +138,9 @@ alias grep="grep -i --color"
 eval $(thefuck --alias)
 
 # ---  Docker shortcuts
-alias d="docker"
-alias mk="minikube"
+alias d='docker'
+alias mk='minikube'
+alias cat='bat'
 
 # Get container IP
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
