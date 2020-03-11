@@ -46,6 +46,7 @@ brew "speedtest_cli"
 brew "streamlink"
 brew "the_silver_searcher"
 brew "thefuck"
+brew "tldr"
 brew "tmux"
 brew "tree"
 brew "vim", args: ["--override-system-vi"]
