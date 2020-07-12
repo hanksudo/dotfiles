@@ -1,5 +1,4 @@
 tap "homebrew/bundle"
-tap "caskroom/cask"
 
 # Programming languages related
 brew "lua"
