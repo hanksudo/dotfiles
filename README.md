@@ -50,6 +50,7 @@ git config --global user.name "You Name"
 - [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
 - [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
 - Use [PTMono Fonts](http://www.paratype.com/public/)
+- Use [Source Code Pro Fonts](https://fonts.google.com/specimen/Source+Code+Pro)
 - [HTTPie: a CLI, cURL-like tool for humans](https://github.com/jakubroztocil/httpie)
 - [thefuck - Magnificent app which corrects your previous console command.](https://github.com/nvbn/thefuck)
 - [A command-line fuzzy finder written in Go](https://github.com/junegunn/fzf)
