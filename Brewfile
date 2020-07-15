@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+tap "homebrew/cask-versions"
 
 # Programming languages related
 brew "lua"
