@@ -7,6 +7,7 @@ brew "python3"
 brew "pipenv"
 brew "node"
 brew "go"
+brew "rust"
 
 # AWS releated
 brew "awscli"
