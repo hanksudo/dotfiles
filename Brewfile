@@ -3,7 +3,6 @@ tap "homebrew/bundle"
 # Programming languages related
 brew "lua"
 brew "ruby"
-brew "python@2"
 brew "python3"
 brew "pipenv"
 brew "node"
