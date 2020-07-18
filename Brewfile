@@ -10,6 +10,8 @@ brew "php"
 brew "node"
 brew "go"
 brew "rust"
+brew "kotlin"
+brew "scala"
 
 # AWS releated
 brew "awscli"
