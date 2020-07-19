@@ -7,11 +7,13 @@ brew "ruby"
 brew "python3"
 brew "pipenv"
 brew "php"
+brew "composer"
 brew "node"
 brew "go"
 brew "rust"
 brew "kotlin"
 brew "scala"
+brew "sbt"
 
 # AWS releated
 brew "awscli"
