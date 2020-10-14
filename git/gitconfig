@@ -1,8 +1,8 @@
 # .gitconfig
 [user]
-    name = 
-    email = 
-    signingkey = 
+    name =
+    email =
+    signingkey =
 [core]
     excludesfile = ~/.git-global-ignore
     attributesfile = ~/.git-global-attributes
@@ -158,8 +158,16 @@
     gpgsign = true
 
 [diff]
-    tool = opendiff
-    compactionHeuristic = true
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+[merge]
+    tool = vscode
+
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
 
 [pager]
     diff  = diff-so-fancy | less --tabs=4 -RFX
@@ -169,12 +177,6 @@
 
 [push]
     default = simple
-
-[mergetool]
-    keepBackup = false
-
-[merge]
-    tool = opendiff
 
 [filter "lfs"]
 	clean = git-lfs clean %f
