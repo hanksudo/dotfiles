@@ -142,6 +142,9 @@ alias d='docker'
 alias mk='minikube'
 alias cat='bat'
 
+# --- Kubernetes shortcuts
+alias k='kubectl'
+
 # Get container IP
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 
