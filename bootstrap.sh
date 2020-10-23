@@ -40,8 +40,8 @@ cp -f zsh/functions ~/.functions
 echo "=> Copying .zprofile ... (if not exists)"
 cp -n zsh/zprofile ~/.zprofile
 
-echo "=> Copying Spectacle conf ..."
-cp -f ~/.dotfiles/conf/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
+echo "=> Copying .aliases ... "
+cp -n zsh/aliases ~/.aliases
 
 # zsh plugin
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]

@@ -46,7 +46,7 @@ DOCKER_VM='default'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws brew nmap npm pip ruby gem rbenv python rust cargo sublime zsh-syntax-highlighting vagrant docker docker-compose httpie jump zsh-autosuggestions)
+plugins=(aws brew nmap npm pip ruby gem rbenv python rust cargo sublime zsh-syntax-highlighting docker docker-compose httpie jump zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,17 +65,12 @@ fi
 # Added Python@3 path
 export PATH=/usr/local/opt/python@3/bin:$PATH
 
-# Use python 3 as default
-alias python=python3
-alias pip=pip3
-
 # zmv '(*).html $1.haml'
 # http://zshwiki.org/home/builtin/functions/zmv
 autoload -U zmv
 
 # default editor
 export EDITOR=vim
-alias e='${EDITOR}'
 
 # npm speed up npm on node-gyp
 export JOBS=max
@@ -84,110 +79,17 @@ export JOBS=max
 # A cd command that learns - easily navigate directories from the command line
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-# extra functions
+# extra functions, aliases
 source ~/.functions
-
-# show path
-alias path='echo ${PATH}'
-
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias ls='exa'
-alias ll='ls -l'
-alias la='ls -a'
-alias lsd='ll | grep "^d"'  # List only directories
-alias lsf='ll | grep "^-"'  # List only files
-alias cp='cp -i'
-alias mv='mv -i'
-
-# Display a tree-like structural of any directory
-alias tree="ls -R | grep ":" | sed -e 's/://' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
-
-alias hosts='sudo $EDITOR /etc/hosts'
-alias sshc='$EDITOR ~/.ssh/config'
-
-# Empty the Trash on all mounted volumes and the main HDD
-alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
-
-# gnu diff does not have DIFFOPTIONS like FreeBSD so:
-alias diff='diff -u'
-
-# IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig | fgrep inet | fgrep netmask"
-#alias ips="config | fgrep inet | fgrep netmask | awk '{print $2}'"
-
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
-
-# default 'Open With ...'
-alias -s md=open
-alias -s html=open
-alias -s json=open
-alias -s csv=open
-
-# shorten
-alias v=vagrant
-
-# alias clean_pyc="find . -name \*.pyc -delete"
-alias grep="grep -i --color"
+source ~/.aliases
 
 # Magnificent app which corrects your previous console command.
 # https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
 
-# ---  Docker shortcuts
-alias d='docker'
-alias mk='minikube'
-alias cat='bat'
-
-# --- Kubernetes shortcuts
-alias k='kubectl'
-
-# Get container IP
-alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-
-# Show all alias related docker
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
-
-# Stop all containers
-dstop() { docker stop $(docker ps -a -q); }
-
-# Remove all containers
-drm() { docker rm $(docker ps -a -q); }
-
-# Remove all images
-dri() { docker rmi $(docker images -q); }
-
-# Stop and Remove all containers
-alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
-
-# Run deamonized container, e.g., $ dkd base /bin/echo hello
-alias dkd="docker run -d -P"
-
-# Run interactive container, e.g., $ dki base /bin/bash
-alias dki="docker run -it -P"
-
-# Dockerfile build, e.g., $ dbu hanksudo/test
-dbu() { docker build -t="$1" .; }
-
-# Bash into running container
-dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
-
-
-
-# Jupyter shortcut notebook
-alias nbx="jupyter nbconvert --execute --to notebook --inplace $1"
-
-# purge all Python packages
-alias pip2-purge="pip2 uninstall -y -r <(pip2 freeze)"
-alias pip3-purge="pip3 uninstall -y -r <(pip3 freeze)"
-
 # A command-line fuzzy finder written in Go
 # https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 
 # scmpuff
 eval "$(scmpuff init -s)"
@@ -197,5 +99,5 @@ weather /台北\?0
 
 . ~/.zprofile
 
-# rbevn
+# rbenv
 eval "$(rbenv init -)"

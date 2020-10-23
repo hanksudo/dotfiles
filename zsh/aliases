@@ -1,0 +1,100 @@
+alias e='${EDITOR}'
+
+# show path
+alias path='echo ${PATH}'
+
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias ls='exa'
+alias ll='ls -l'
+alias la='ls -a'
+alias lsd='ll | grep "^d"'  # List only directories
+alias lsf='ll | grep "^-"'  # List only files
+alias cp='cp -i'
+alias mv='mv -i'
+alias cat='bat'
+
+# Display a tree-like structural of any directory
+alias tree="ls -R | grep ":" | sed -e 's/://' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+
+alias hosts='sudo $EDITOR /etc/hosts'
+alias sshc='$EDITOR ~/.ssh/config'
+
+# Empty the Trash on all mounted volumes and the main HDD
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
+
+# gnu diff does not have DIFFOPTIONS like FreeBSD so:
+alias diff='diff -u'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig | fgrep inet | fgrep netmask"
+#alias ips="ifconfig | fgrep inet | fgrep netmask | awk '{print $2}'"
+
+# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"
+
+# default 'Open With ...'
+alias -s md=open
+alias -s html=open
+alias -s json=open
+alias -s csv=open
+
+# alias clean_pyc="find . -name \*.pyc -delete"
+alias grep="grep -i --color"
+
+##########
+#   Docker
+##########
+
+alias d='docker'
+alias mk='minikube'
+
+# Get container IP
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+
+# Show all alias related docker
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+
+# Stop all containers
+dstop() { docker stop $(docker ps -a -q); }
+
+# Remove all containers
+drm() { docker rm $(docker ps -a -q); }
+
+# Remove all images
+dri() { docker rmi $(docker images -q); }
+
+# Stop and Remove all containers
+alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
+
+# Run deamonized container, e.g., $ dkd base /bin/echo hello
+alias dkd="docker run -d -P"
+
+# Run interactive container, e.g., $ dki base /bin/bash
+alias dki="docker run -it -P"
+
+# Dockerfile build, e.g., $ dbu hanksudo/test
+dbu() { docker build -t="$1" .; }
+
+# Bash into running container
+dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+
+
+#####
+# Python
+#####
+
+# Use python 3 as default
+alias python=python3
+alias pip=pip3
+# Jupyter shortcut notebook
+alias nbx="jupyter nbconvert --execute --to notebook --inplace $1"
+
+# purge all Python packages
+alias pip3-purge="pip3 uninstall -y -r <(pip3 freeze)"
+
+
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
