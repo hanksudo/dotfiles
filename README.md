@@ -37,10 +37,10 @@ git config --global user.email your-email-address
 git config --global user.name "You Name"
 ```
 
-## OSX and Terminal Settings
+## MacOS and Terminal Settings
 
 ```bash
-~/.dotfiles/osx
+~/.dotfiles/macos
 ```
 
 ## Note
