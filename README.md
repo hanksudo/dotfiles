@@ -57,16 +57,18 @@ git config --global user.name "You Name"
 
 ## Applications
 
+- [Alfred - Productivity App for macOS](https://www.alfredapp.com/)
+- [iTerm2 - macOS Terminal Replacement](https://www.iterm2.com/)
 - [IINA - The modern media player for macOS](https://iina.io/)
 - [Notable - The Markdown-based note-taking app that doesn't suck](https://notable.md/)
 - [Rectangle: Move and resize windows on macOS with keyboard shortcuts and snap areas](https://github.com/rxhanson/Rectangle)
-
+- [Sublime Text - A sophisticated text editor for code, markup and prose](https://www.sublimetext.com/)
 
 ## Extra alias & functions
 
 - Git alias inside **git/gitconfig**
 - [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
-- Use **gls(coreutils)** instead of ls.
+- Use [**exa**](https://github.com/ogham/exa) instead of ls.
 - **doctoc** - Generates table of contents for markdown files inside local git repository
 - **lsd** - list only directories
 - **hosts** - Quick edit /etc/hosts
