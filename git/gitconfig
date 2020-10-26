@@ -15,6 +15,7 @@
     all = commit -am
     cm = commit -m
     co = checkout
+    cont = rebase --continue
     dic = diff --cached
     ec = config -e
     ecg = config -e --global
