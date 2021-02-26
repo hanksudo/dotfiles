@@ -58,7 +58,7 @@ brew "tldr"
 brew "tmux"
 brew "tree"
 brew "vim", args: ["--override-system-vi"]
-brew "wget", args: ["--with-iri"]
+brew "wget"
 brew "yarn", args: ["without-node"]
 brew "youtube-dl"
 brew "zsh-completions"
@@ -84,5 +84,5 @@ cask "slack"
 cask "sequel-pro"
 cask "Rectangle"
 cask "the-unarchiver"
-cask "caskroom/versions/google-chrome-canary"
+cask "homebrew/cask-versions/google-chrome-canary"
 cask "visual-studio-code"
