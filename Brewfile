@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-versions"
+tap "homebrew/cask-fonts"
 
 # Programming languages related
 brew "lua"
@@ -14,6 +15,10 @@ brew "rust"
 brew "kotlin"
 brew "scala"
 brew "sbt"
+
+# Font
+brew "font-pt-mono"
+brew "font-source-code-pro"
 
 # AWS releated
 brew "awscli"
