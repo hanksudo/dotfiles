@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[
-var ${1:this} = require('${1:this}');
-]]></content>
-    <tabTrigger>nm</tabTrigger>
-    <scope>source.js</scope>
-</snippet>

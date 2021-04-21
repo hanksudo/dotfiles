@@ -1,4 +1,0 @@
-{
-    "cmd"       : ["/usr/bin/php", "$file"],
-    "selector"  : "source.php"
-}

@@ -1,4 +1,0 @@
-{
-    "cmd"       : ["/bin/sh", "$file"],
-    "selector"  : "source.sh"
-}
