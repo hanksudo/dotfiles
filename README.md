@@ -62,65 +62,33 @@ git config --global user.name "You Name"
 - [IINA - The modern media player for macOS](https://iina.io/)
 - [Notable - The Markdown-based note-taking app that doesn't suck](https://notable.md/)
 - [Rectangle: Move and resize windows on macOS with keyboard shortcuts and snap areas](https://github.com/rxhanson/Rectangle)
-- [Sublime Text - A sophisticated text editor for code, markup and prose](https://www.sublimetext.com/)
 
 ## Extra alias & functions
 
 - Git alias inside **git/gitconfig**
-- [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
+- **bat** A cat(1) clone with wings (https://github.com/sharkdp/bat)
 - Use [**exa**](https://github.com/ogham/exa) instead of ls.
 - **doctoc** - Generates table of contents for markdown files inside local git repository
 - **lsd** - list only directories
 - **hosts** - Quick edit /etc/hosts
 - **sshc** - Quick edit ~/.ssh/config
 - **emptytrash** - Empty the Trash on all mounted volumes and the main HDD
-- **ccat** Colorizing `cat` (https://github.com/jingweno/ccat)
 - **ip** - detect IP by remote server
 - **localip** - local ip
 - **ips** - IPv4 IPs
-- **image** - Search on Google Image
 - **ports** - list all listening ports (sudo required)
 - **whois** - Enhanced WHOIS lookups
 - **gz** - get gzipped size
 - **extract** - Extract archives - use: `extract <file>`
 - **mkcd** - Make dir and cd into.
-- **map** - Search on Google Map
 - **titler** - Auto copy web title and url as specific format
-- **pip2-purge** - Purge all Python2 packges
 - **pip3-purge** - Purge all Python3 packges
+- **image** - Search on Google Image
+- **map** - Search on Google Map
 - **weather** - Show weather
 - **server** - Start an HTTP server from a directory, optionally specifying the port.
 - **serve** - Serve static files
-
-## Sublime Text 3 Packages
-
-- [Anaconda](https://github.com/DamnWidget/anaconda)
-- [AutoFileName](https://github.com/BoundInCode/AutoFileName)
-- Babel
-- BracketHighlighter
-- [DashDoc: Dash integration for Sublime Text](https://github.com/farcaller/DashDoc)
-- Dockerfile Syntax Highlighting
-- EditorConfig
-- EJS
-- [Emmet](https://github.com/sergeche/emmet-sublime)
-- [GitCommitMsg](https://github.com/cbumgard/GitCommitMsg)
-- GitGutter
-- GoSublime
-- Hayaku - tools for writing CSS faster
-- Jade
-- JsFormat
-- Mako
-- [Markdown Preview](https://github.com/revolunet/sublimetext-markdown-preview)
-- [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing)
-- [Package Control](https://github.com/wbond/package_control)
-- [PlainTasks](https://github.com/aziz/PlainTasks)
-- Pretty JSON
-- requirementstxt
-- Sass
-- [SQLExec](https://github.com/jum4/sublime-sqlexec)
-- SublimeLinter
-- SublimeLinter-contrib-eslint
-- [TodoReview](https://github.com/jonathandelgado/SublimeTodoReview)
+- [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
 
 ## Export VSCode extensions
 
