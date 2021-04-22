@@ -14,14 +14,6 @@ autopep8
 # https://gitlab.com/pycqa/flake8
 flake8
 
-# Project documentation with Markdown.
-# http://www.mkdocs.org
-mkdocs
-
-# Better dates and times for Python
-# https://github.com/crsmithdev/arrow/
-arrow
-
 # Extensions to the standard Python datetime module
 # https://dateutil.readthedocs.io
 python-dateutil
