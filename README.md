@@ -111,6 +111,10 @@ sl
 cowsay お元気ですか？
 ```
 
+## XCode color scheme
+
+https://patmurraydev.github.io/San-Jose/
+
 ## References
 
 - [GitHub does dotfiles - dotfiles.github.io](http://dotfiles.github.io/)
