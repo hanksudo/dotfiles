@@ -29,7 +29,7 @@ xcode-select --install
 curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 ```
 
-Set Git user info if you use gitconfig
+## Set Git user info if you use gitconfig
 
 ```bash
 git config --global user.signingkey XXXXXXX
@@ -46,10 +46,11 @@ git config --global user.name "You Name"
 ## Note
 
 - [homebrew - The missing package manager for OS X](http://brew.sh/)
-- [ack 2.0 is a greplike tool optimized for programmers searching large heterogeneous trees of source code.](https://github.com/petdance/ack2)
+- [ack is a grep-like search tool optimized for source code.](https://github.com/beyondgrep/ack3/)
+- [ag - A code-searching tool similar to ack, but faster.](https://github.com/ggreer/the_silver_searcher)
 - [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
 - [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
-- Use [PTMono Fonts](http://www.paratype.com/public/)
+- Use [PTMono Fonts](https://fonts.google.com/specimen/PT+Mono)
 - Use [Source Code Pro Fonts](https://fonts.google.com/specimen/Source+Code+Pro)
 - [HTTPie: a CLI, cURL-like tool for humans](https://github.com/jakubroztocil/httpie)
 - [thefuck - Magnificent app which corrects your previous console command.](https://github.com/nvbn/thefuck)
@@ -60,7 +61,7 @@ git config --global user.name "You Name"
 - [Alfred - Productivity App for macOS](https://www.alfredapp.com/)
 - [iTerm2 - macOS Terminal Replacement](https://www.iterm2.com/)
 - [IINA - The modern media player for macOS](https://iina.io/)
-- [Notable - The Markdown-based note-taking app that doesn't suck](https://notable.md/)
+- [Notion - All-in-one workspace](https://www.notion.so/)
 - [Rectangle: Move and resize windows on macOS with keyboard shortcuts and snap areas](https://github.com/rxhanson/Rectangle)
 
 ## Extra alias & functions
