@@ -16,10 +16,6 @@ brew "kotlin"
 brew "scala"
 brew "sbt"
 
-# Font
-brew "font-pt-mono"
-brew "font-source-code-pro"
-
 # AWS releated
 brew "awscli"
 brew "s3cmd"
@@ -67,6 +63,10 @@ brew "yarn", args: ["without-node"]
 brew "youtube-dl"
 brew "zsh-completions"
 
+# Font
+cask "font-pt-mono"
+cask "font-source-code-pro"
+
 # Applications
 cask_args appdir: "/Applications"
 cask "alfred"
@@ -84,7 +84,6 @@ cask "notion"
 cask "postman"
 cask "skype"
 cask "slack"
-cask "sequel-pro"
 cask "Rectangle"
 cask "the-unarchiver"
 cask "homebrew/cask-versions/google-chrome-canary"
