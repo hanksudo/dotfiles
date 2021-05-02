@@ -7,7 +7,7 @@ brew "lua"
 brew "ruby"
 brew "python3"
 brew "pipenv"
-brew "php"
+brew "php@7.4", link: true, conflicts_with: ["php"]
 brew "composer"
 brew "node"
 brew "go"
@@ -15,6 +15,7 @@ brew "rust"
 brew "kotlin"
 brew "scala"
 brew "sbt"
+brew "svn"
 
 # AWS releated
 brew "awscli"
