@@ -66,7 +66,9 @@ brew "zsh-completions"
 
 # Font
 cask "font-pt-mono"
-cask "font-source-code-pro"
+
+# https://github.com/hanksudo/dotfiles/issues/4
+# cask "font-source-code-pro"
 
 # Applications
 cask_args appdir: "/Applications"
