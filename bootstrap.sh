@@ -19,12 +19,6 @@ cp git/git-global-attributes ~/.git-global-attributes
 
 which git-pr && rm "$(which git-pr)"  # Remove git-pr, which broken my alias `git pull --rebase`
 
-echo "=> Copying PTMono fonts ..."
-cp -rf fonts/PTMono/*ttf ~/Library/Fonts/
-
-echo "=> Copying PTMono fonts ..."
-cp -rf fonts/Source_Code_Pro/*ttf ~/Library/Fonts/
-
 echo "=> Copying .zsh-theme ..."
 cp -f theme/hanksudo.zsh-theme ~/.oh-my-zsh/themes/
 
