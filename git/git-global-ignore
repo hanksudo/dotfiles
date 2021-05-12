@@ -1,6 +1,6 @@
 # .git-global-ignore
 
-# ignore emacs backups
+# ignore emacs/vi backups
 *~
 
 # object files
@@ -13,3 +13,6 @@
 # other repositories
 CVS
 .svn
+
+# Mac
+.DS_Store
