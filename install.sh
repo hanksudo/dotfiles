@@ -2,7 +2,7 @@
 if [ ! -d ~/.oh-my-zsh ]
 then
     echo "=> Installing oh-my-zsh ..."
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 if [ -d "$HOME/.dotfiles" ]; then
