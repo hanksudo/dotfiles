@@ -101,3 +101,7 @@ weather /台北\?0
 
 # rbenv
 eval "$(rbenv init -)"
+
+# google cloud sdk
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
