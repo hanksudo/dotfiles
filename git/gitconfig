@@ -130,7 +130,7 @@
 [color.diff]
     # plain = white
     # meta = white
-    frag = ul bold blue
+    frag = bold blue
     #func = white
     old = bold red
     new = bold green
