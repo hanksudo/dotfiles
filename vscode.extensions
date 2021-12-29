@@ -1,5 +1,8 @@
 abusaidm.html-snippets
+adpyke.vscode-sql-formatter
 alefragnani.project-manager
+amatiasq.sort-imports
+bmewburn.vscode-intelephense-client
 bungcip.better-toml
 chipcollier.Theme-OceanKit
 christian-kohler.path-intellisense
@@ -9,7 +12,6 @@ deerawan.vscode-dash
 donjayamanne.githistory
 EditorConfig.EditorConfig
 esbenp.prettier-vscode
-felixfbecker.php-debug
 felixfbecker.php-intellisense
 formulahendry.code-runner
 gencer.html-slim-scss-css-class-completion
@@ -23,18 +25,15 @@ mathiasfrohlich.Kotlin
 mohsen1.prettify-json
 ms-azuretools.vscode-docker
 ms-python.python
-ms-toolsai.jupyter
-neuron.neuron-IPE
-octref.vetur
+ms-python.vscode-pylance
 PKief.material-icon-theme
 rebornix.ruby
+redhat.vscode-commons
 redhat.vscode-yaml
 reduckted.vscode-gitweblinks
 rust-lang.rust
 scala-lang.scala
-tht13.rst-vscode
 timonwong.shellcheck
-unpublished.sourcekit-lsp
 vayan.haml
 vknabel.vscode-swiftformat
 vmsynkov.colonize
