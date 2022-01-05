@@ -46,7 +46,7 @@ DOCKER_VM='default'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws brew nmap npm pip ruby gem rbenv python rust cargo zsh-syntax-highlighting docker docker-compose httpie jump zsh-autosuggestions kubectl)
+plugins=(aws brew nmap npm pip ruby gem rbenv python rust zsh-syntax-highlighting docker docker-compose httpie jump zsh-autosuggestions kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
