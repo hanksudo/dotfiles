@@ -5,7 +5,7 @@
 if ! command -v brew > /dev/null; then
     echo "=> Installing homebrew ..."
     echo "=> "
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew analytics off
     export HOMEBREW_NO_INSECURE_REDIRECT=1
     ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
