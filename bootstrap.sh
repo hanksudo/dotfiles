@@ -62,6 +62,5 @@ ruby --version
 echo "node $(node --version)"
 go version
 rustc -V
-sdk version
 echo
 echo "All done!"
