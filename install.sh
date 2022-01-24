@@ -22,3 +22,6 @@ echo ""
 npm install -g npm
 xargs npm i -g < npmfile
 "$HOME"/.dotfiles/bootstrap.sh
+
+# SDKMAN
+curl -s "https://get.sdkman.io" | bash
