@@ -5,7 +5,7 @@ tap "homebrew/cask-fonts"
 # Programming languages related
 brew "lua"
 brew "ruby"
-# brew "rbenv"
+brew "rbenv"
 brew "chruby"
 brew "ruby-install"
 brew "python3"

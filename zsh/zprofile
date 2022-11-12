@@ -22,12 +22,6 @@ export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 # Rust cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# Ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-
 # Git global config
 git config --global user.signingkey 8D82D8EE96EC0BCC
 git config --global user.email 467745+hanksudo@users.noreply.github.com
