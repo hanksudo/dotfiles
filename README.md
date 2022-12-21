@@ -67,7 +67,7 @@ git config --global user.name "You Name"
 ## Extra alias & functions
 
 - Git alias inside **git/gitconfig**
-- **bat** A cat(1) clone with wings (https://github.com/sharkdp/bat)
+- **bat** A cat(1) clone with wings (<https://github.com/sharkdp/bat>)
 - Use [**exa**](https://github.com/ogham/exa) instead of ls.
 - **doctoc** - Generates table of contents for markdown files inside local git repository
 - **lsd** - list only directories
@@ -87,6 +87,7 @@ git config --global user.name "You Name"
 - **image** - Search on Google Image
 - **map** - Search on Google Map
 - **weather** - Show weather
+- **qrr** - QRCode reader (by zbarimg)
 - **server** - Start an HTTP server from a directory, optionally specifying the port.
 - **serve** - Serve static files
 - [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
@@ -113,7 +114,7 @@ cowsay お元気ですか？
 
 ## XCode color scheme
 
-https://patmurraydev.github.io/San-Jose/
+<https://patmurraydev.github.io/San-Jose/>
 
 ## References
 
