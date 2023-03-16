@@ -292,12 +292,6 @@ defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 defaults write com.apple.commerce AutoUpdate -bool true
 
 ###############################################################################
-# Rectangle
-###############################################################################
-
-cp -r conf/com.knollsoft.Rectangle.plist ~/Library/Preferences/com.knollsoft.Rectangle.plist 2> /dev/null
-
-###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
@@ -314,7 +308,6 @@ for app in "Activity Monitor" \
 	"Messages" \
 	"Opera" \
 	"Photos" \
-    "Rectangle" \
 	"Safari" \
 	"SystemUIServer" \
 	"Terminal" \
