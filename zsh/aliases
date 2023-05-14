@@ -86,9 +86,6 @@ dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 # Python
 #####
 
-# Use python 3 as default
-alias python=python3
-alias pip=pip3
 # Jupyter shortcut notebook
 alias nbx="jupyter nbconvert --execute --to notebook --inplace $1"
 
