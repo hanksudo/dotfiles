@@ -49,6 +49,7 @@ git config --global user.name "You Name"
 - [ack is a grep-like search tool optimized for source code.](https://github.com/beyondgrep/ack3/)
 - [ag - A code-searching tool similar to ack, but faster.](https://github.com/ggreer/the_silver_searcher)
 - [autojump - a faster way to navigate your filesystem](https://github.com/joelthelion/autojump) - use `j folderName` jump to your frequency use folder.
+- [Schniz/fnm: 🚀 Fast and simple Node.js version manager, built in Rust](https://github.com/Schniz/fnm)
 - [git-extras](https://github.com/visionmedia/git-extras) - GIT utilities
 - Use [PTMono Fonts](https://fonts.google.com/specimen/PT+Mono)
 - Use [Source Code Pro Fonts](https://fonts.google.com/specimen/Source+Code+Pro)

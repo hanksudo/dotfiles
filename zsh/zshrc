@@ -108,3 +108,6 @@ source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completi
 
 # SDKMAN
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# fnm - https://github.com/Schniz/fnm
+eval "$(fnm env --use-on-cd)"

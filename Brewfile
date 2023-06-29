@@ -3,6 +3,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/cask-fonts"
 
 # Programming languages related
+brew "fnm"
 brew "lua"
 brew "ruby"
 brew "rbenv"
