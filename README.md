@@ -91,7 +91,6 @@ git config --global user.name "You Name"
 - **map** - Search on Google Map
 - **weather** - Show weather
 - **qrr** - QRCode reader (by zbarimg)
-- **server** - Start an HTTP server from a directory, optionally specifying the port.
 - **serve** - Serve static files
 - [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
 
