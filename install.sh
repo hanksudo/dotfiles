@@ -26,3 +26,6 @@ xargs npm i -g < npmfile
 
 # SDKMAN
 curl -s "https://get.sdkman.io" | bash
+
+# imgcat
+curl -sL https://iterm2.com/utilities/imgcat -o ~/bin/imgcat && chmod +x ~/bin/imgcat
