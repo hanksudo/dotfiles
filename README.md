@@ -96,16 +96,17 @@ git config --global user.name "You Name"
 - **serve** - Serve static files
 - [zmv](http://zshwiki.org/home/builtin/functions/zmv) - zmv is a module that allow people to do massive rename.
 
-## Export VSCode extensions
+## Export exists packages
 
 ```bash
+# VSCode extensions
 code --list-extensions > vscode.extensions
-```
 
-## Export NPM packages list
-
-```bash
+# npm packages
 npm ls -g --depth=0
+
+# dump homebrew package list
+brew bundle dump -f
 ```
 
 ## Command lines for fun
