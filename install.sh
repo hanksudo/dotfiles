@@ -29,3 +29,6 @@ curl -s "https://get.sdkman.io" | bash
 
 # imgcat
 curl -sL https://iterm2.com/utilities/imgcat -o ~/bin/imgcat && chmod +x ~/bin/imgcat
+
+# pypi-info - Script to auto generate Python package info on requirements.txt
+curl -L https://raw.githubusercontent.com/hanksudo/pypi-info-generator/master/pypi-info.sh -o ~/bin/pypi-info && chmod +x ~/bin/pypi-info

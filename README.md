@@ -23,13 +23,11 @@
 ```bash
 sudo softwareupdate -i -a
 xcode-select --install
-```
 
-```bash
 curl -L https://raw.github.com/hanksudo/dotfiles/master/install.sh | sh
 ```
 
-## Set Git user info if you use gitconfig
+## Set Git user info if you use .gitconfig
 
 ```bash
 git config --global user.signingkey XXXXXXX
