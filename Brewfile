@@ -3,16 +3,16 @@ tap "homebrew/cask-versions"
 tap "homebrew/cask-fonts"
 
 # Programming languages related
-brew "fnm"
+brew "fnm" # Fast and simple Node.js version manager
 brew "lua"
 brew "ruby"
 brew "rbenv"
 brew "chruby"
 brew "ruby-install"
-brew "python3"
+brew "python"
 brew "pipenv"
 brew "pyenv"
-brew "php@7.4", link: true, conflicts_with: ["php"]
+# brew "php@7.4", link: true, conflicts_with: ["php"]
 brew "composer"
 brew "node"
 brew "go"
@@ -27,7 +27,7 @@ brew "android-studio"
 
 # AWS releated
 brew "awscli"
-# brew "s3cmd"
+brew "s3cmd"
 
 brew "ag"
 brew "autojump"
@@ -72,7 +72,7 @@ brew "wget"
 brew "yarn"
 brew "youtube-dl"
 brew "zsh-completions"
-brew "php-cs-fixer"
+# brew "php-cs-fixer"
 
 # Font
 cask "font-pt-mono"
