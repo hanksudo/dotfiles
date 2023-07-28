@@ -54,6 +54,7 @@ git config --global user.name "You Name"
 - [HTTPie: a CLI, cURL-like tool for humans](https://github.com/jakubroztocil/httpie)
 - [thefuck - Magnificent app which corrects your previous console command.](https://github.com/nvbn/thefuck)
 - [A command-line fuzzy finder written in Go](https://github.com/junegunn/fzf)
+- [scmpuff makes working with git from the command line quicker by substituting numeric shortcuts for filenames](https://mroth.github.io/scmpuff/)
 
 ## Fonts
 

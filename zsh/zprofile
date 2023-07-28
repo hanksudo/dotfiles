@@ -16,9 +16,6 @@ export PYTHONSTARTUP=~/.pythonrc
 # Android SDK home
 export ANDROID_HOME=~/Library/Android/sdk
 
-# Rust cargo
-export PATH="$HOME/.cargo/bin:$PATH"
-
 # Git global config
 git config --global user.signingkey 8D82D8EE96EC0BCC
 git config --global user.email 467745+hanksudo@users.noreply.github.com
