@@ -11,13 +11,10 @@ LC_ALL="en_US.UTF-8"
 export HOMEBREW_GITHUB_API_TOKEN=
 
 # auto completion for Python
-export PYTHONSTART2UP=~/.pythonrc
+export PYTHONSTARTUP=~/.pythonrc
 
 # Android SDK home
 export ANDROID_HOME=~/Library/Android/sdk
-
-# PostgreSQL bin
-export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 
 # Rust cargo
 export PATH="$HOME/.cargo/bin:$PATH"

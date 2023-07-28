@@ -37,6 +37,9 @@ cp -n zsh/zprofile ~/.zprofile
 echo "=> Copying .aliases ... "
 cp -n zsh/aliases ~/.aliases
 
+echo "=> Copying .pythonrc"
+cp -n zsh/pythonrc ~/.pythonrc
+
 # zsh plugin
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]
 then
