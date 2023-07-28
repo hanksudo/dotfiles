@@ -87,7 +87,7 @@ git config --global user.name "You Name"
 - **extract** - Extract archives - use: `extract <file>`
 - **mkcd** - Make dir and cd into.
 - **titler** - Auto copy web title and url as specific format
-- **pip3-purge** - Purge all Python3 packges
+- **pip-purge** - Purge all Python3 packges
 - **image** - Search on Google Image
 - [**imgcat**](https://iterm2.com/documentation-images.html) - Make iTerm2 able to display images within the terminal
 - **map** - Search on Google Map
