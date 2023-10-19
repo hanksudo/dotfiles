@@ -70,7 +70,7 @@ git config --global user.name "You Name"
 
 - Git alias inside **git/gitconfig**
 - **bat** A cat(1) clone with wings (<https://github.com/sharkdp/bat>)
-- Use [**exa**](https://github.com/ogham/exa) instead of ls.
+- [**eza**](https://github.com/eza-community/eza) - A modern, maintained replacement for ls
 - **doctoc** - Generates table of contents for markdown files inside local git repository
 - **lsd** - list only directories
 - **hosts** - Quick edit /etc/hosts

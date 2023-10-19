@@ -5,7 +5,7 @@ alias path='echo ${PATH}'
 
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias ls='exa'
+alias ls='eza'
 alias ll='ls -l'
 alias la='ls -a'
 alias lsd='ll | grep "^d"'  # List only directories
