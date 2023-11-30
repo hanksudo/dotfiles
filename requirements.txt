@@ -1,6 +1,6 @@
 # JupyterLab computational environment
 # http://jupyter.org
-jupyterlab
+# jupyterlab
 
 # Diagram as Code
 # https://diagrams.mingrammer.com
