@@ -90,8 +90,7 @@ dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 alias nbx="jupyter nbconvert --execute --to notebook --inplace $1"
 
 # purge all Python packages
-alias pip-purge="pip uninstall -y -r <(pip freeze)"
-
+alias pip-purge="pip freeze | xargs pip uninstall -y"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
