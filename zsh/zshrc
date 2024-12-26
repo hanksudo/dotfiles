@@ -105,9 +105,6 @@ eval "$(rbenv init -)"
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
-# SDKMAN
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-
 # fnm - https://github.com/Schniz/fnm
 eval "$(fnm env --use-on-cd)"
 
