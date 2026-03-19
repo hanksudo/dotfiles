@@ -66,7 +66,6 @@ Managed via [Homebrew](https://brew.sh/) — see [Brewfile](./Brewfile) for the 
 | [ripgrep](https://github.com/BurntSushi/ripgrep) | Fast recursive search tool |
 | [scmpuff](https://mroth.github.io/scmpuff/) | Numeric shortcuts for git filenames |
 | [thefuck](https://github.com/nvbn/thefuck) | Corrects your previous console command |
-| [tldr](https://github.com/tldr-pages/tldr) | Simplified man pages |
 | [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) | Better looking git diffs |
 
 ## Applications
