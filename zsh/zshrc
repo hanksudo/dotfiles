@@ -25,12 +25,9 @@ zinit snippet OMZL::key-bindings.zsh
 zinit snippet OMZP::aws
 zinit snippet OMZP::nmap
 zinit snippet OMZP::npm
-zinit snippet OMZP::pip
 zinit snippet OMZP::python
 zinit snippet OMZP::rust
 zinit snippet OMZP::docker
-zinit snippet OMZP::httpie
-zinit snippet OMZP::jump
 
 # --- Third-party plugins (lazy loaded for fast startup) ---
 zinit ice wait lucid atload"_zsh_autosuggest_start"
