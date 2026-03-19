@@ -11,7 +11,6 @@ fi
 echo ""
 
 "$HOME"/.dotfiles/brew.sh
-"$HOME"/.dotfiles/pip.sh
 "$HOME"/.dotfiles/goinstall.sh
 "$HOME"/.dotfiles/vscode-extensions.sh
 npm install -g npm

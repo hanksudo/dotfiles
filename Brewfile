@@ -56,7 +56,6 @@ cask "font-jetbrains-mono-nerd-font"
 
 # Applications
 cask_args appdir: "/Applications"
-cask "dropbox"
 cask "firefox"
 cask "figma"
 cask "google-chrome"
