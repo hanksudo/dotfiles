@@ -19,9 +19,6 @@ cp git/git-global-attributes ~/.git-global-attributes
 
 which git-pr && rm "$(which git-pr)"  # Remove git-pr, which broken my alias `git pull --rebase`
 
-echo "=> Copying .zsh-theme ..."
-cp -f theme/hanksudo.zsh-theme ~/.oh-my-zsh/themes/
-
 echo "=> Copying .zshrc ..."
 cp -f zsh/zshrc ~/.zshrc
 
@@ -44,26 +41,14 @@ echo "=> Copying Ghostty config ..."
 mkdir -p ~/.config/ghostty
 cp -f ghostty.config ~/.config/ghostty/config
 
-# zsh plugin
-if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]
-then
-    echo "=> Installing zsh-syntax-highlighting ..."
-    echo "=> "
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-fi
-
-if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]
-then
-    echo "=> Installing zsh-autosuggestions ..."
-    echo "=> "
-    git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-fi
+echo "=> Copying starship.toml ..."
+mkdir -p ~/.config
+cp -f starship.toml ~/.config/starship.toml
 
 echo
 sw_vers
 echo
 brew --version
-python2 --version
 python3 --version
 echo "node $(node --version)"
 go version

@@ -1,0 +1,36 @@
+format = "$time$username$hostname$directory$git_branch$git_status$character"
+add_newline = false
+
+[time]
+disabled = false
+format = "[$time]($style) "
+style = "yellow"
+time_format = "%H:%M"
+
+[username]
+show_always = false
+style_user = "magenta"
+format = "[$user]($style)@"
+
+[hostname]
+ssh_only = true
+style = "magenta"
+format = "[$hostname]($style) "
+
+[directory]
+truncation_length = 1
+style = "cyan"
+format = "[$path]($style)"
+
+[git_branch]
+style = "magenta"
+format = " [git](blue):[$branch]($style)"
+
+[git_status]
+format = "[$modified]($style)"
+style = "magenta"
+modified = "*"
+
+[character]
+success_symbol = " [❯](bold green)"
+error_symbol = " [❯](bold red)"

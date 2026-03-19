@@ -1,59 +1,51 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+# --- zinit bootstrap ---
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [[ ! -d "$ZINIT_HOME" ]]; then
+    mkdir -p "$(dirname $ZINIT_HOME)"
+    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+source "${ZINIT_HOME}/zinit.zsh"
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="hanksudo"
+# --- Completion system ---
+autoload -Uz compinit && compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-BLUE='\033[0;34m'
-GREEN='\033[0;32m'
-NC='\033[0m'
+# --- History ---
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_REDUCE_BLANKS
 
-DOCKER_VM='default'
+# --- OMZ plugins (loaded as snippets, no full OMZ clone needed) ---
+zinit snippet OMZL::key-bindings.zsh
+zinit snippet OMZP::aws
+zinit snippet OMZP::nmap
+zinit snippet OMZP::npm
+zinit snippet OMZP::pip
+zinit snippet OMZP::python
+zinit snippet OMZP::rust
+zinit snippet OMZP::docker
+zinit snippet OMZP::docker-compose
+zinit snippet OMZP::httpie
+zinit snippet OMZP::jump
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# --- Third-party plugins (lazy loaded for fast startup) ---
+zinit ice wait lucid atload"_zsh_autosuggest_start"
+zinit light zsh-users/zsh-autosuggestions
 
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+zinit ice wait lucid
+zinit light zsh-users/zsh-syntax-highlighting
 
-# Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+# --- Starship prompt ---
+eval "$(starship init zsh)"
 
-# Uncomment to change how often before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want to disable command autocorrection
-# DISABLE_CORRECTION="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment following line if you want to disable marking untracked files under
-# VCS as dirty. This makes repository status check for large repositories much,
-# much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws nmap npm pip python rust zsh-syntax-highlighting docker docker-compose httpie jump zsh-autosuggestions)
-
-source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
+# --- Paths ---
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Added Go paths
 if type go > /dev/null; then
@@ -61,9 +53,6 @@ if type go > /dev/null; then
     export GOROOT=`go env GOROOT`
     export PATH=$PATH:$GOPATH/bin
 fi
-
-# Added Python@3 path
-export PATH=/usr/local/opt/python@3/bin:$PATH
 
 # zmv '(*).html $1.haml'
 # http://zshwiki.org/home/builtin/functions/zmv
@@ -94,9 +83,6 @@ eval $(thefuck --alias)
 # scmpuff makes working with git from the command line quicker by substituting numeric shortcuts for filenames
 # https://mroth.github.io/scmpuff/
 eval "$(scmpuff init -s)"
-
-# weather /東京\?0
-# weather /台北\?0
 
 # google cloud sdk
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
