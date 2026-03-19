@@ -84,7 +84,7 @@
   },
   "workbench.startupEditor": "newUntitledFile",
   "search.useIgnoreFiles": false,
-  "terminal.external.osxExec": "iTerm2.app",
+  "terminal.external.osxExec": "Ghostty.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "go.useLanguageServer": true,
   "go.lintOnSave": "workspace",
@@ -132,7 +132,7 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "terminal.integrated.fontFamily": "PT Mono",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "editor.largeFileOptimizations": false,
   "redhat.telemetry.enabled": false,
   "go.toolsManagement.autoUpdate": true,
@@ -155,7 +155,6 @@
     }
   },
   "python.defaultInterpreterPath": "/Users/hank/.pyenv/versions/3.11.6/bin/python",
-  "python.pipenvPath": "/usr/local/bin/pipenv",
   "update.showReleaseNotes": false,
   "editor.inlineSuggest.enabled": true,
   "git.autofetch": true,
