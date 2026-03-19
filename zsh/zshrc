@@ -29,7 +29,6 @@ zinit snippet OMZP::pip
 zinit snippet OMZP::python
 zinit snippet OMZP::rust
 zinit snippet OMZP::docker
-zinit snippet OMZP::docker-compose
 zinit snippet OMZP::httpie
 zinit snippet OMZP::jump
 
