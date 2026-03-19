@@ -23,12 +23,12 @@ style = "cyan"
 format = "[$path]($style)"
 
 [git_branch]
-style = "magenta"
+style = "red"
 format = " [git](blue):[$branch]($style)"
 
 [git_status]
 format = "[$modified]($style)"
-style = "magenta"
+style = "yellow"
 modified = "*"
 
 [character]
