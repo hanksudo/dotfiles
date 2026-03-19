@@ -1,130 +1,189 @@
 {
-    "editor.minimap.enabled": false,
-    "[html]": {
-      "editor.formatOnSave": false
-    },
-    "[javascript]": {
-      "editor.formatOnSave": false
-    },
-    "editor.formatOnPaste": false,
-    "editor.fontSize": 18,
-    "editor.renderLineHighlight": "none",
-    "editor.renderIndentGuides": false,
-    "workbench.colorTheme": "Base16 Ocean Dark",
-    "workbench.fontAliasing": "antialiased",
-    "editor.fontFamily": "Source Code Pro",
-    "window.zoomLevel": 1,
-    "git.confirmSync": false,
-    "files.exclude": {
-      "**/.ipynb_checkpoints": true,
-      "**/_trial_temp": true,
-      "**/.cache": true,
-      "**/*.pyc": true,
-      "**/*.pid": true,
-      "**/node_modules": true,
-      ".vagrant": true,
-      "**/*.js.map": true,
-    },
-    "search.exclude": {
-      "**/.ipynb_checkpoints": true,
-      "**/_trial_temp": true,
-      "**/.cache": true,
-      "**/*.pyc": true,
-      "**/*.pid": true,
-      "**/node_modules": true,
-      ".vagrant": true,
-      ".cache": true,
-      ".vscode": true,
-      "**/*.js.map": true,
-    },
-    "python.pythonPath": "/usr/local/opt/python@3/bin/python3",
-    "python.formatting.provider": "none",
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Path": "/usr/local/bin/flake8",
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Args": [
-      "--max-line-length=160",
-      "--ignore=E309,E305,E302,E501,W293,W503,W504"
-    ],
-    "material-icon-theme.showUpdateMessage": false,
-    "extensions.ignoreRecommendations": false,
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 2,
-    "emmet.includeLanguages": {
-      "javascript": "javascriptreact",
-      "vue-html": "html",
-      "vue": "html"
-    },
-    "code-runner.saveFileBeforeRun": true,
-    "code-runner.enableAppInsights": false,
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.executorMap": {
-      "python": "/usr/local/opt/python@3/bin/python3"
-    },
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "files.associations": {
-      "*.mak": "html"
-    },
-    "workbench.startupEditor": "newUntitledFile",
-    "search.useIgnoreFiles": false,
-    "terminal.external.osxExec": "iTerm2.app",
-    "terminal.integrated.shell.osx": "zsh",
-    "go.useLanguageServer": true,
-    "go.gocodeAutoBuild": true,
-    "[go]": {
-      "editor.formatOnSave": true,
-      "editor.codeActionsOnSave": {
-          "source.organizeImports": true
-      }
-    },
-    "[swift]": {
-      "editor.formatOnSave": true
-    },
-    "[rust]": {
-      "editor.formatOnSave": true
-    },
-    "shellcheck.exclude": [
-      "SC2039"
-    ],
-    "vsicons.dontShowNewVersionMessage": true,
-    "python.linting.mypyEnabled": true,
-    "markdownlint.config": {
-      "MD013": false,
-      "MD024": {
-        "siblings_only": true
-      }
-    },
-    "python.pipenvPath": "/usr/local/bin/pipenv",
+  "editor.minimap.enabled": false,
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "never"
+  },
+  "eslint.lintTask.enable": true,
+  "eslint.format.enable": true,
+  "eslint.debug": true,
+  "editor.formatOnPaste": false,
+  "editor.fontSize": 18,
+  "editor.fontFamily": "Source Code Pro",
+  "editor.renderLineHighlight": "none",
+  "editor.fontWeight": "normal",
+  "editor.bracketPairColorization.enabled": false,
+  "workbench.colorTheme": "Base16 Ocean Dark",
+  "workbench.fontAliasing": "antialiased",
+  "git.confirmSync": false,
+  "files.exclude": {
+    "**/*.pb.go": true,
+    "**/.ipynb_checkpoints": true,
+    "**/_trial_temp": true,
+    "**/.cache": true,
+    "**/*.pyc": true,
+    "**/*.pid": true,
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.venv": true,
+    "**/*.js.map": true,
+    "**/.mypy_cache": true
+  },
+  "search.exclude": {
+    "**/.ipynb_checkpoints": true,
+    "**/_trial_temp": true,
+    "**/.cache": true,
+    "**/*.pyc": true,
+    "**/*.pid": true,
+    "**/node_modules": true,
+    ".vagrant": true,
+    ".cache": true,
+    ".vscode": true,
+    "**/*.js.map": true,
+    "**/.mypy_cache": true
+  },
+  "extensions.ignoreRecommendations": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.enableAppInsights": false,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "python": "/opt/homebrew/bin/python3"
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.mak": "html",
+    "*.env.development": "env",
+    "*.env.production": "env",
+    "*.env.staging": "env"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "search.useIgnoreFiles": false,
+  "terminal.external.osxExec": "iTerm2.app",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "go.useLanguageServer": true,
+  "go.lintOnSave": "workspace",
+  "go.lintTool": "staticcheck",
+  "[go]": {
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorCustomizations": {}, // use rubocop for formatting
-    "yaml.schemas": {
-      "https://json.schemastore.org/circleciconfig": [".circleci/*.yml"]
-    },
-    "yaml.validate": true,
-    "yaml.format.enable": true,
-    "markdown.preview.fontSize": 16,
-    "[markdown]": {
-      "editor.wordWrap": "on",
-      "editor.quickSuggestions": false
-    },
-    "workbench.editorAssociations": [
-
-    ],
-    "sourcekit-lsp.serverPath": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp",
-    "php-cs-fixer.executablePath": "php-cs-fixer",
-    "php-cs-fixer.config": ".php_cs;.php_cs.dist",
-    "php-cs-fixer.onsave": true,
-    "terminal.integrated.fontFamily": "PT Mono",
-    "editor.largeFileOptimizations": false,
-    "editor.fontLigatures": true,
-    "swiftformat.enable": true,
-    "swiftformat.path": "/usr/local/bin/swiftformat",
-    "swiftformat.configSearchPaths": [
-      ".swiftformat"
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[swift]": {
+    "editor.formatOnSave": true
+  },
+  "[rust]": {
+    "editor.formatOnSave": true
+  },
+  "shellcheck.exclude": [
+    "SC2039"
+  ],
+  "shellcheck.enable": true,
+  "shellcheck.enableQuickFix": false,
+  "shellcheck.run": "onType",
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorCustomizations": {
+    "[Default High Contrast]": {},
+    "[Default Light+]": {}
+  },
+  "yaml.schemas": {
+    "https://json.schemastore.org/circleciconfig": [
+      ".circleci/*.yml"
     ]
-  }
+  },
+  "yaml.validate": true,
+  "yaml.format.enable": true,
+  "markdown.preview.fontSize": 16,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "terminal.integrated.fontFamily": "PT Mono",
+  "editor.largeFileOptimizations": false,
+  "redhat.telemetry.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.fontSize": 14,
+  "settingsSync.ignoredExtensions": [],
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "\u3000": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "python.defaultInterpreterPath": "/Users/hank/.pyenv/versions/3.11.6/bin/python",
+  "python.pipenvPath": "/usr/local/bin/pipenv",
+  "update.showReleaseNotes": false,
+  "editor.inlineSuggest.enabled": true,
+  "git.autofetch": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true
+  },
+  "editor.inlineSuggest.showToolbar": "always",
+  "git.openRepositoryInParentFolders": "never",
+  "editor.multiCursorLimit": 100000,
+  "editor.fontLigatures": false,
+  "editor.formatOnSave": true,
+  "playwright.reuseBrowser": true,
+  "rust-analyzer.check.command": "clippy",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "python.languageServer": "None",
+  "geminicodeassist.enableTelemetry": false,
+  "geminicodeassist.displayInlineContextHint": false,
+  "http.systemCertificatesNode": true
+}
