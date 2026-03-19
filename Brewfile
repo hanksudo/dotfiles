@@ -15,7 +15,6 @@ brew "rust"
 
 # AWS releated
 brew "awscli"
-brew "s3cmd"
 
 brew "ripgrep"
 brew "starship"

@@ -1,7 +1,0 @@
-# JupyterLab computational environment
-# http://jupyter.org
-# jupyterlab
-
-# Diagram as Code
-# https://diagrams.mingrammer.com
-diagrams
