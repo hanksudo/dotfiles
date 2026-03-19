@@ -1,12 +1,9 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-versions"
-tap "homebrew/cask-fonts"
 
 # Programming languages related
 brew "fnm" # Fast and simple Node.js version manager
 brew "lua"
 brew "python"
-brew "pipenv"
 brew "pyenv"
 brew "go"
 brew "rust"
@@ -58,8 +55,6 @@ brew "zsh-completions"
 
 # Font
 cask "font-jetbrains-mono-nerd-font"
-cask "font-pt-mono"
-cask "font-source-code-pro"
 
 # Applications
 cask_args appdir: "/Applications"
@@ -70,9 +65,7 @@ cask "figma"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "google-japanese-ime"
-cask "iterm2"
 cask "iina"
-cask "vlc"
 cask "notion"
 cask "postman"
 cask "raycast"
@@ -80,7 +73,7 @@ cask "slack"
 cask "sf-symbols"
 cask "tableplus"
 cask "the-unarchiver"
-cask "homebrew/cask-versions/google-chrome-canary"
+cask "google-chrome-canary"
 cask "ghostty"
 cask "visual-studio-code"
 cask "zed"
