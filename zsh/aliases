@@ -46,7 +46,6 @@ alias grep="grep -i --color"
 ##########
 
 alias d='docker'
-alias mk='minikube'
 
 # Get container IP
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
@@ -82,9 +81,6 @@ dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
 #####
 # Python
 #####
-
-# Jupyter shortcut notebook
-alias nbx="jupyter nbconvert --execute --to notebook --inplace $1"
 
 # purge all Python packages
 alias pip-purge="pip freeze | xargs pip uninstall -y"
