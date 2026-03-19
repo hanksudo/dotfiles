@@ -67,6 +67,7 @@ brew "yarn"
 brew "zsh-completions"
 
 # Font
+cask "font-jetbrains-mono-nerd-font"
 cask "font-pt-mono"
 cask "font-source-code-pro"
 
@@ -90,6 +91,7 @@ cask "sf-symbols"
 cask "tableplus"
 cask "the-unarchiver"
 cask "homebrew/cask-versions/google-chrome-canary"
+cask "ghostty"
 cask "visual-studio-code"
 cask "zed"
 cask "inkscape"

@@ -40,6 +40,10 @@ cp -n zsh/aliases ~/.aliases
 echo "=> Copying .pythonrc"
 cp -n zsh/pythonrc ~/.pythonrc
 
+echo "=> Copying Ghostty config ..."
+mkdir -p ~/.config/ghostty
+cp -f ghostty.config ~/.config/ghostty/config
+
 # zsh plugin
 if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ]
 then
