@@ -38,6 +38,7 @@
     log5 = log --max-count=5 HEAD
 
     k = !gitk --all
+    open = !gh browse
 
 # graph of tree
 # =============
