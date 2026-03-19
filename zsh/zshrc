@@ -46,7 +46,7 @@ DOCKER_VM='default'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws nmap npm pip ruby gem rbenv python rust zsh-syntax-highlighting docker docker-compose httpie jump zsh-autosuggestions kubectl)
+plugins=(aws nmap npm pip python rust zsh-syntax-highlighting docker docker-compose httpie jump zsh-autosuggestions kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,9 +97,6 @@ eval "$(scmpuff init -s)"
 
 # weather /東京\?0
 # weather /台北\?0
-
-# rbenv
-eval "$(rbenv init -)"
 
 # google cloud sdk
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
