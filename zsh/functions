@@ -124,8 +124,3 @@ image() {
 weather() {
   curl "wttr.in$1"
 }
-
-# qrcode reader (by zbarimg)
-qrr() {
-  zbarimg -q --raw "$1" | pbcopy
-}
