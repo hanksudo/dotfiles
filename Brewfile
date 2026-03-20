@@ -1,7 +1,6 @@
 tap "homebrew/bundle"
 
 # Programming languages related
-brew "fnm" # Fast and simple Node.js version manager
 brew "lua"
 brew "python"
 brew "pyenv"
