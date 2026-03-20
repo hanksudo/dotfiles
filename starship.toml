@@ -27,9 +27,16 @@ style = "red"
 format = " [git](blue):[$branch]($style)"
 
 [git_status]
-format = "[$modified]($style)"
+format = "[$staged$modified$untracked$deleted$stashed$ahead_behind]($style)"
 style = "yellow"
+staged = "+"
 modified = "*"
+untracked = "?"
+deleted = "x"
+stashed = "$"
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
 
 [character]
 success_symbol = " [❯](bold green)"
