@@ -47,6 +47,7 @@ brew "tree"
 brew "vim"
 brew "wget"
 brew "websocat"
+brew "volta"
 brew "yarn"
 brew "zsh-completions"
 

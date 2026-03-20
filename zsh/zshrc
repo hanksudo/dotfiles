@@ -85,7 +85,8 @@ eval "$(scmpuff init -s)"
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
-# fnm - https://github.com/Schniz/fnm
-eval "$(fnm env --use-on-cd)"
+# volta - https://volta.sh
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 . ~/.zprofile
