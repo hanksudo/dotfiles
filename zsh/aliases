@@ -42,43 +42,6 @@ alias -s csv=open
 alias grep="grep -i --color"
 alias rg="rg -."
 
-##########
-#   Docker
-##########
-
-alias d='docker'
-
-# Get container IP
-alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-
-# Show all alias related docker
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
-
-# Stop all containers
-dstop() { docker stop $(docker ps -a -q); }
-
-# Remove all containers
-drm() { docker rm $(docker ps -a -q); }
-
-# Remove all images
-dri() { docker rmi $(docker images -q); }
-
-# Stop and Remove all containers
-alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
-
-# Run deamonized container, e.g., $ dkd base /bin/echo hello
-alias dkd="docker run -d -P"
-
-# Run interactive container, e.g., $ dki base /bin/bash
-alias dki="docker run -it -P"
-
-# Dockerfile build, e.g., $ dbu hanksudo/test
-dbu() { docker build -t="$1" .; }
-
-# Bash into running container
-dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
-
-
 #####
 # Python
 #####
