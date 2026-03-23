@@ -158,13 +158,6 @@
   "update.showReleaseNotes": false,
   "editor.inlineSuggest.enabled": true,
   "git.autofetch": true,
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": true,
-    "markdown": false,
-    "scminput": false,
-    "yaml": true
-  },
   "editor.inlineSuggest.showToolbar": "always",
   "git.openRepositoryInParentFolders": "never",
   "editor.multiCursorLimit": 100000,
@@ -182,7 +175,5 @@
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "python.languageServer": "None",
-  "geminicodeassist.enableTelemetry": false,
-  "geminicodeassist.displayInlineContextHint": false,
   "http.systemCertificatesNode": true
 }
