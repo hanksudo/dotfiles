@@ -89,3 +89,6 @@ source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completi
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+# local overrides (not tracked in dotfiles)
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
