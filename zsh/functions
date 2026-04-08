@@ -119,3 +119,8 @@ image() {
 weather() {
   curl "wttr.in$1"
 }
+
+# ob - open Obsidian vault by name
+ob() {
+  open "obsidian://open?vault=${1:-$(basename $(pwd))}"
+}
