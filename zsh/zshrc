@@ -81,14 +81,6 @@ eval $(thefuck --alias)
 # https://mroth.github.io/scmpuff/
 eval "$(scmpuff init -s)"
 
-# google cloud sdk
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
-# volta - https://volta.sh
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
 # local overrides (not tracked in dotfiles)
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
